@@ -1,5 +1,6 @@
 import type { PersonaId } from '@shared/types'
 import { OFFERS, SPONSORS } from '@/data/catalogue'
+import { L } from '@/data/l'
 import { now } from '@/lib/clock'
 import { update } from '../db'
 import { actorName, uid, withAudit, withNotification } from './helpers'
@@ -47,8 +48,11 @@ export function givePartnerConsent(
         ),
       },
       actorName(db, learnerId),
-      'Partner consent given',
-      `${sponsor.name.en} (${offer.title.en})`,
+      L('Partner consent given', 'منح موافقة الشريك'),
+      L(
+        `${sponsor.name.en} (${offer.title.en})`,
+        `${sponsor.name.ar || sponsor.name.en} (${offer.title.ar || offer.title.en})`,
+      ),
     )
   })
   return id
@@ -67,8 +71,8 @@ export function withdrawPartnerConsent(consentId: string) {
         ),
       },
       actorName(db, c.learnerId),
-      'Partner consent withdrawn',
-      sponsor?.name.en ?? c.sponsorId,
+      L('Partner consent withdrawn', 'سحب موافقة الشريك'),
+      sponsor?.name ?? L(c.sponsorId, c.sponsorId),
     )
   })
 }
@@ -82,8 +86,10 @@ export function setMarketingConsent(learnerId: PersonaId, on: boolean) {
         learners: db.learners.map((l) => (l.personaId === learnerId ? { ...l, marketing: on } : l)),
       },
       actorName(db, learnerId),
-      on ? 'Marketing emails on' : 'Marketing emails off',
-      'Consents',
+      on
+        ? L('Marketing emails on', 'تفعيل الرسائل التسويقية')
+        : L('Marketing emails off', 'إيقاف الرسائل التسويقية'),
+      L('Consents', 'الموافقات'),
     ),
   )
 }

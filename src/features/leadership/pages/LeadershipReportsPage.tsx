@@ -18,16 +18,21 @@ type Doc = 'summary' | 'sponsor' | null
 
 /** Reports tab (C13): scorecard (CSV for Excel), leadership summary and sponsor report (print). */
 export function LeadershipReportsPage() {
-  const { t } = useTranslation('leadership')
-  const { l, lang } = useLocalized()
+  const { t, i18n } = useTranslation('leadership')
+  const { lang } = useLocalized()
   const me = useMe()
   const k = useKpis()
   const [doc, setDoc] = useState<Doc>(null)
-  const actor = l(me.name)
+  // Audit actors are stored by English name (language-independent filter).
+  const actor = me.name.en
   const n = (v: number) => formatNumber(v, lang)
 
-  const record = (title: string) => {
-    logExport(actor, title)
+  const record = (key: string) => {
+    const title = t(key)
+    logExport(actor, {
+      en: i18n.getFixedT('en', 'leadership')(key),
+      ar: i18n.getFixedT('ar', 'leadership')(key),
+    })
     toast.success(t('reports.downloaded', { name: title }))
   }
   const scorecard = () => {
@@ -45,11 +50,11 @@ export function LeadershipReportsPage() {
       [t('reports.sections.status')],
       ...statusRows(k, t).map((r) => [r.label, r.value]),
     ])
-    record(t('reports.scorecard.title'))
+    record('reports.scorecard.title')
   }
   const open = (d: Exclude<Doc, null>) => {
     setDoc(d)
-    record(t(`reports.${d}.title`))
+    record(`reports.${d}.title`)
   }
 
   return (

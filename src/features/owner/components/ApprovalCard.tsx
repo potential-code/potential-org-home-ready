@@ -6,12 +6,14 @@ import { StatusBadge } from '@/components/shared/StatusBadge'
 import { Button } from '@/components/ui/button'
 import { formatDate, formatTime, useLocalized } from '@/i18n'
 import { publishContent, returnToAuthor } from '@/store/actions'
+import { useActorName } from '../hooks/use-actor-name'
 
 /** One item returned by the reviewer, with Publish / Return to author. */
 export function ApprovalCard({ a }: { a: Approval }) {
   const { t } = useTranslation('owner')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const approved = a.outcome === 'approved'
+  const actorName = useActorName()
   return (
     <article className="card flex flex-col gap-3 p-5 sm:flex-row sm:items-center">
       <div className="min-w-0 flex-1 space-y-1.5">
@@ -30,11 +32,11 @@ export function ApprovalCard({ a }: { a: Approval }) {
             </StatusBadge>
           )}
         </div>
-        <h3 className="text-base">{a.title}</h3>
-        <p className="text-sm text-ink">{a.note}</p>
+        <h3 className="text-base">{l(a.title)}</h3>
+        <p className="text-sm text-ink">{l(a.note)}</p>
         <p className="text-xs text-ink-soft">
           {t('approvals.reviewer', {
-            name: a.reviewer,
+            name: actorName(a.reviewer),
             date: `${formatDate(a.at, lang)}, ${formatTime(a.at, lang)}`,
           })}
         </p>
@@ -46,7 +48,7 @@ export function ApprovalCard({ a }: { a: Approval }) {
               className="rounded-full"
               onClick={() => {
                 if (publishContent(a.contentId))
-                  toast.success(t('approvals.published', { title: a.title }))
+                  toast.success(t('approvals.published', { title: l(a.title) }))
               }}
             >
               <Rocket aria-hidden />
@@ -57,7 +59,7 @@ export function ApprovalCard({ a }: { a: Approval }) {
             variant="outline"
             onClick={() => {
               returnToAuthor(a.id)
-              toast.success(t('approvals.returned', { title: a.title }))
+              toast.success(t('approvals.returned', { title: l(a.title) }))
             }}
           >
             <Undo2 className="rtl-mirror" aria-hidden />

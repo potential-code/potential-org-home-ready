@@ -43,7 +43,7 @@ export function PlacementPreviewDialog({
                 {t('sponsors.previewCta')}
               </p>
             </div>
-            <p className="text-xs text-ink-soft">{PLACEMENT_RULE}</p>
+            <p className="text-xs text-ink-soft">{l(PLACEMENT_RULE)}</p>
             {placement.status === 'paused' && (
               <p className="flex items-center gap-2 rounded-xl bg-notice-soft p-3 text-sm font-semibold text-notice">
                 <EyeOff className="size-4 shrink-0" aria-hidden />

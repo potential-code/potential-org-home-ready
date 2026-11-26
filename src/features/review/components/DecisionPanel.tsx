@@ -13,7 +13,7 @@ import { ReviewStatusBadge } from './ReviewStatusBadge'
 /** Comment box with Approve / Request changes; shows the decision once made. */
 export function DecisionPanel({ r }: { r: ReviewItem }) {
   const { t } = useTranslation('review')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const [comment, setComment] = useState('')
   const [error, setError] = useState('')
   if (r.status !== 'pending') {
@@ -35,7 +35,9 @@ export function DecisionPanel({ r }: { r: ReviewItem }) {
   }
   const approve = () => {
     approveReview(r.id, comment.trim())
-    toast.success(t('item.approved', { title: r.title }), { description: t('item.approvedBody') })
+    toast.success(t('item.approved', { title: l(r.title) }), {
+      description: t('item.approvedBody'),
+    })
   }
   const changes = () => {
     if (!comment.trim()) {
@@ -43,7 +45,7 @@ export function DecisionPanel({ r }: { r: ReviewItem }) {
       return
     }
     requestChanges(r.id, comment.trim())
-    toast.success(t('item.changesSent', { title: r.title }))
+    toast.success(t('item.changesSent', { title: l(r.title) }))
   }
   return (
     <section className="card space-y-3 p-5">

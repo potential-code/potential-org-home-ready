@@ -7,6 +7,7 @@ import type {
   Situation,
   TrackKey,
 } from '@shared/types'
+import { L } from '@/data/l'
 import { scoreQuiz } from '@/domain/learning'
 import { now } from '@/lib/clock'
 import { getDb, update } from '../db'
@@ -92,8 +93,11 @@ export function registerLearner(input: RegisterInput): string {
         ),
       },
       input.name,
-      `Registered (terms accepted, marketing ${input.marketing ? 'on' : 'off'})`,
-      'Learner account',
+      L(
+        `Registered (terms accepted, marketing ${input.marketing ? 'on' : 'off'})`,
+        `سجّل (قبل الشروط، الرسائل التسويقية ${input.marketing ? 'مفعّلة' : 'متوقفة'})`,
+      ),
+      L('Learner account', 'حساب متعلم'),
     )
   })
   return id

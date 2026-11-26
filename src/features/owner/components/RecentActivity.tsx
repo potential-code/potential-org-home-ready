@@ -3,12 +3,14 @@ import { History } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { formatDate, formatTime, useLocalized } from '@/i18n'
 import { useAudit } from '@/store/hooks'
+import { useActorName } from '../hooks/use-actor-name'
 
 /** Overview: last five audit events. */
 export function RecentActivity() {
   const { t } = useTranslation('owner')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const audit = useAudit().slice(0, 5)
+  const actorName = useActorName()
   return (
     <section className="card p-5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -31,8 +33,9 @@ export function RecentActivity() {
               {formatDate(a.at, lang, { day: 'numeric', month: 'short' })}, {formatTime(a.at, lang)}
             </span>
             <span className="min-w-0 text-sm">
-              <span className="font-semibold">{a.actor}</span> {a.action.toLowerCase()}:{' '}
-              <span className="text-ink-soft">{a.target}</span>
+              <span className="font-semibold">{actorName(a.actor)}</span>{' '}
+              {lang === 'en' ? a.action.en.toLowerCase() : l(a.action)}:{' '}
+              <span className="text-ink-soft">{l(a.target)}</span>
             </span>
           </li>
         ))}

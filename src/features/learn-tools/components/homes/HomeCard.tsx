@@ -36,7 +36,7 @@ export function HomeCard({
   const { l, lang } = useLocalized()
   const id = useId()
   const [editing, setEditing] = useState(false)
-  const [draft, setDraft] = useState(home.notes)
+  const [draft, setDraft] = useState(l(home.notes))
   const name = l(home.title)
   const aed = (n: number) => t('homes.aed', { value: formatNumber(Math.round(n), lang) })
 
@@ -103,7 +103,7 @@ export function HomeCard({
               <Button
                 size="sm"
                 onClick={() => {
-                  updateHome(home.id, { notes: draft.trim() })
+                  updateHome(home.id, { notes: { en: draft.trim(), ar: draft.trim() } })
                   setEditing(false)
                   toast.success(t('homes.notesSaved'))
                 }}
@@ -116,7 +116,7 @@ export function HomeCard({
             </div>
           </>
         ) : (
-          <p className="text-sm text-ink">{home.notes || t('homes.noNotes')}</p>
+          <p className="text-sm text-ink">{l(home.notes) || t('homes.noNotes')}</p>
         )}
         {!editing && (
           <div className="flex flex-wrap gap-2 pt-1">
@@ -124,7 +124,7 @@ export function HomeCard({
               size="sm"
               variant="outline"
               onClick={() => {
-                setDraft(home.notes)
+                setDraft(l(home.notes))
                 setEditing(true)
               }}
             >

@@ -21,7 +21,12 @@ function Root() {
       </a>
       <Outlet />
       <DemoGuide />
-      <Toaster position="top-center" closeButton dir={lang === 'ar' ? 'rtl' : 'ltr'} />
+      <Toaster
+        position="top-center"
+        closeButton
+        dir={lang === 'ar' ? 'rtl' : 'ltr'}
+        containerAriaLabel={t('toastRegion')}
+      />
     </MotionConfig>
   )
 }

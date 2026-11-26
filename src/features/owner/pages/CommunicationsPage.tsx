@@ -14,11 +14,11 @@ import { REMINDER_SCHEDULE } from '../config'
 /** Maya's Communications (C8.2, C14). */
 export function CommunicationsPage() {
   const { t } = useTranslation('owner')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const templates = useTemplates()
   const nudges = useNudges()
   const [editing, setEditing] = useState<EmailTemplate | null>(null)
-  const subjectOf = (id: string) => templates.find((x) => x.id === id)?.subject ?? id
+  const subjectOf = (id: string) => l(templates.find((x) => x.id === id)?.subject) || id
   return (
     <div className="space-y-5">
       <PageHeader title={t('pages.communications')} description={t('comms.description')} />
@@ -34,11 +34,11 @@ export function CommunicationsPage() {
               <li key={tp.id} className="flex flex-col gap-2 py-3 sm:flex-row sm:items-start">
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <p className="text-xs font-semibold text-ink-soft">{tp.trigger}</p>
-                    <StatusBadge tone="brand">{tp.channel}</StatusBadge>
+                    <p className="text-xs font-semibold text-ink-soft">{l(tp.trigger)}</p>
+                    <StatusBadge tone="brand">{l(tp.channel)}</StatusBadge>
                   </div>
-                  <p className="mt-1 font-semibold">{tp.subject}</p>
-                  <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">{tp.body}</p>
+                  <p className="mt-1 font-semibold">{l(tp.subject)}</p>
+                  <p className="mt-0.5 line-clamp-2 text-sm text-ink-soft">{l(tp.body)}</p>
                 </div>
                 <Button
                   variant="outline"
@@ -65,7 +65,7 @@ export function CommunicationsPage() {
               {REMINDER_SCHEDULE.map((r) => (
                 <li key={r.id} className="rounded-xl bg-tint-50 p-3">
                   <p className="font-semibold">{subjectOf(r.id)}</p>
-                  <p className="text-ink-soft">{r.when}</p>
+                  <p className="text-ink-soft">{t(`comms.when.${r.id}`)}</p>
                 </li>
               ))}
             </ul>

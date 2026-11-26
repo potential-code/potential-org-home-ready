@@ -77,7 +77,7 @@ export function LearnersPage() {
               cols.map((c) => String((c.exportValue ?? c.sortValue)?.(r) ?? '')),
             ),
           ])
-          logExport('Maya', 'Learners list (CSV)')
+          logExport('Maya', { en: 'Learners list (CSV)', ar: 'قائمة المتعلمين (CSV)' })
           toast.success(t('learners.exported'))
         }}
         empty={

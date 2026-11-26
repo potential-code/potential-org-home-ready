@@ -30,15 +30,22 @@ export function NudgeDialog({
   audience: string
   count: number
 }) {
-  const { t } = useTranslation('owner')
-  const { lang } = useLocalized()
+  const { t, i18n } = useTranslation('owner')
+  const { l, lang } = useLocalized()
   const tpl = useTemplates().find((x) => x.id === 'ET-nudge')
-  const [subject, setSubject] = useState(tpl?.subject ?? '')
-  const [body, setBody] = useState(tpl?.body ?? '')
+  const [subject, setSubject] = useState(l(tpl?.subject))
+  const [body, setBody] = useState(l(tpl?.body))
   const n = formatNumber(count, lang)
 
   const send = () => {
-    sendNudge(audience, count, 'ET-nudge')
+    sendNudge(
+      {
+        en: i18n.getFixedT('en', 'owner')('learners.savedFilter'),
+        ar: i18n.getFixedT('ar', 'owner')('learners.savedFilter'),
+      },
+      count,
+      'ET-nudge',
+    )
     toast.success(t('learners.nudge.sent', { count: n }), {
       description: t('learners.nudge.sentBody'),
     })

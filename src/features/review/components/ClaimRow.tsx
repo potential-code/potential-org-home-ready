@@ -33,7 +33,7 @@ export function ClaimRow({
   return (
     <li className="grid gap-3 py-4 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-end">
       <div className="min-w-0 space-y-1">
-        <p className="font-semibold">{claim.text}</p>
+        <p className="font-semibold">{l(claim.text)}</p>
         <p className="text-sm text-ink-soft">
           {t('item.source')}: {source ? `${l(source.org)}, ${l(source.name)}` : claim.sourceId}
         </p>

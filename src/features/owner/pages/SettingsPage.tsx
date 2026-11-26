@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
+import { useLocalized } from '@/i18n'
 import { saveSettings } from '@/store/actions'
 import { useSettings } from '@/store/hooks'
 import { AuditLogCard } from '../components/AuditLogCard'
@@ -20,6 +21,7 @@ const LANGS: Lang[] = ['en', 'ar']
 /** Maya's Settings (C8.2) with the audit log (C12). */
 export function SettingsPage() {
   const { t } = useTranslation('owner')
+  const { l } = useLocalized()
   const saved = useSettings()
   const [s, setS] = useState<PlatformSettings>(saved)
   const [expiry, setExpiry] = useState(String(saved.checkExpiryDays))
@@ -116,7 +118,7 @@ export function SettingsPage() {
             label={t('settings.reviewer')}
             value={s.reviewerId}
             onChange={(reviewerId) => setS((x) => ({ ...x, reviewerId }))}
-            options={reviewers.map((p) => ({ value: p.id, label: p.name.en }))}
+            options={reviewers.map((p) => ({ value: p.id, label: l(p.name) }))}
           />
         </section>
         <section className={card}>

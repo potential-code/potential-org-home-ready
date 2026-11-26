@@ -17,7 +17,7 @@ import { useOasis } from '../hooks/use-oasis'
 
 /** Oasis Performance (C8.5): aggregates only, never a name, email or phone. */
 export function PerformancePage() {
-  const { t } = useTranslation('sponsor')
+  const { t, i18n } = useTranslation('sponsor')
   const { lang } = useLocalized()
   const oasis = useOasis()
   const k = useKpis()
@@ -27,7 +27,10 @@ export function PerformancePage() {
   const reportTitle = `${oasis.name}: ${t('pages.performance')}`
   const download = () => {
     setOpen(true)
-    logExport(oasis.name, reportTitle)
+    logExport(oasis.name, {
+      en: `${oasis.name}: ${i18n.getFixedT('en', 'sponsor')('pages.performance')}`,
+      ar: `${oasis.name}: ${i18n.getFixedT('ar', 'sponsor')('pages.performance')}`,
+    })
     toast.success(t('perf.download'))
   }
   const bars = [

@@ -28,7 +28,7 @@ export function ContentPage() {
     const s = q.trim().toLowerCase()
     return content.filter(
       (c) =>
-        (!s || titleOf(c).en.toLowerCase().includes(s)) &&
+        (!s || titleOf(c).en.toLowerCase().includes(s) || titleOf(c).ar.includes(s)) &&
         (kind === 'all' || c.kind === kind) &&
         (status === 'all' || c.status === status),
     )

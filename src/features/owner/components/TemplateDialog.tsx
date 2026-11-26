@@ -1,4 +1,4 @@
-import type { EmailTemplate } from '@shared/types'
+import type { EmailTemplate, Localized } from '@shared/types'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'sonner'
@@ -14,6 +14,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import { useLocalized } from '@/i18n'
 import { updateTemplate } from '@/store/actions'
 
 /** Edit a C14 template's subject and body. */
@@ -25,21 +26,23 @@ export function TemplateDialog({
   onClose: () => void
 }) {
   const { t } = useTranslation('owner')
+  const { l, lang } = useLocalized()
   const [subject, setSubject] = useState('')
   const [body, setBody] = useState('')
   const [error, setError] = useState('')
   useEffect(() => {
-    setSubject(tpl?.subject ?? '')
-    setBody(tpl?.body ?? '')
+    const pick = (v?: Localized) => (v ? (lang === 'ar' && v.ar ? v.ar : v.en) : '')
+    setSubject(pick(tpl?.subject))
+    setBody(pick(tpl?.body))
     setError('')
-  }, [tpl])
+  }, [tpl, lang])
   const save = () => {
     if (!tpl) return
     if (!subject.trim() || !body.trim()) {
       setError(t('comms.required'))
       return
     }
-    updateTemplate(tpl.id, subject.trim(), body.trim())
+    updateTemplate(tpl.id, subject.trim(), body.trim(), lang)
     toast.success(t('comms.saved'), { description: subject.trim() })
     onClose()
   }
@@ -49,7 +52,7 @@ export function TemplateDialog({
         <DialogHeader>
           <DialogTitle>{t('comms.editTitle')}</DialogTitle>
           <DialogDescription>
-            {tpl?.trigger} · {tpl?.channel}
+            {l(tpl?.trigger)} · {l(tpl?.channel)}
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4">

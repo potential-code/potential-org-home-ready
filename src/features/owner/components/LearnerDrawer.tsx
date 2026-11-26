@@ -48,7 +48,10 @@ export function LearnerDrawer({
               <dl className="grid grid-cols-2 gap-3 text-sm">
                 {[
                   [t('learners.col.emirate'), t(`emirate.${learner.emirate}`)],
-                  [t('learners.col.track'), `${t(`track.${learner.track}`)}, ${learner.progress}%`],
+                  [
+                    t('learners.col.track'),
+                    `${t(`track.${learner.track}`)}${lang === 'ar' ? '،' : ','} ${learner.progress}%`,
+                  ],
                   [t('learners.drawer.situation'), t(`situation.${learner.situation}`)],
                   [t('learners.drawer.household'), t(`household.${learner.household}`)],
                   [

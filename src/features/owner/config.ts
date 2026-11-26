@@ -46,12 +46,12 @@ export const STATUS_TONE: Record<ContentStatus, Tone> = {
 
 /** C14 automatic message schedule. */
 export const REMINDER_SCHEDULE = [
-  { id: 'ET-welcome', when: 'On registration' },
-  { id: 'ET-nudge', when: '7 days after sign-up with no useful action, 10:00' },
-  { id: 'ET-renewal', when: '90 days before contract end (opt-in), 09:00' },
-  { id: 'ET-event', when: '24 hours before the event' },
-  { id: 'ET-certificate', when: 'When a certificate is issued' },
-  { id: 'ET-partner', when: 'When a partner request is passed on (opt-in)' },
+  { id: 'ET-welcome' },
+  { id: 'ET-nudge' },
+  { id: 'ET-renewal' },
+  { id: 'ET-event' },
+  { id: 'ET-certificate' },
+  { id: 'ET-partner' },
 ] as const
 
 /** Audit actions grouped for the Settings log filter. */

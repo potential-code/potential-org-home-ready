@@ -177,7 +177,8 @@ export interface SavedChecklist {
   /** Ticked item ids. */
   ticked: string[]
   /** itemId -> note */
-  notes: Record<string, string>
+  /** Seeded notes are bilingual; notes the learner types are stored as typed (en = ar). */
+  notes: Record<string, Localized>
   createdAt: string
   updatedAt: string
 }
@@ -193,7 +194,8 @@ export interface ShortlistHome {
   annualRent: number
   cheques: number
   furnished: boolean
-  notes: string
+  /** Seeded notes are bilingual; notes the learner types are stored as typed (en = ar). */
+  notes: Localized
   addedAt: string
 }
 
@@ -403,7 +405,7 @@ export interface ContentItem {
 
 export interface Claim {
   id: string
-  text: string
+  text: Localized
   sourceId: string
   checkedOn: string
 }
@@ -411,7 +413,7 @@ export interface Claim {
 export interface ReviewItem {
   id: string
   contentId: string
-  title: string
+  title: Localized
   languages: Lang[]
   enText: string
   arText: string
@@ -427,9 +429,9 @@ export interface ReviewItem {
 export interface Approval {
   id: string
   contentId: string
-  title: string
+  title: Localized
   outcome: 'approved' | 'changes'
-  note: string
+  note: Localized
   reviewer: string
   at: string
   published: boolean
@@ -439,10 +441,10 @@ export interface Approval {
 
 export interface EmailTemplate {
   id: string
-  trigger: string
-  channel: string
-  subject: string
-  body: string
+  trigger: Localized
+  channel: Localized
+  subject: Localized
+  body: Localized
 }
 
 export interface DemoNotification {
@@ -458,8 +460,8 @@ export interface DemoNotification {
 
 export interface Announcement {
   id: string
-  title: string
-  body: string
+  title: Localized
+  body: Localized
   scheduledFor: string
   status: 'scheduled' | 'sent' | 'draft'
 }
@@ -467,7 +469,7 @@ export interface Announcement {
 export interface Nudge {
   id: string
   templateId: string
-  audience: string
+  audience: Localized
   count: number
   at: string
 }
@@ -476,8 +478,8 @@ export interface AuditEntry {
   id: string
   at: string
   actor: string
-  action: string
-  target: string
+  action: Localized
+  target: Localized
 }
 
 export interface PlatformSettings {

@@ -38,7 +38,7 @@ export function SponsorsPage() {
         <ShieldCheck className="mt-0.5 size-5 shrink-0" aria-hidden />
         <span>
           <span className="font-semibold">{t('sponsors.rule')}: </span>
-          {PLACEMENT_RULE}
+          {l(PLACEMENT_RULE)}
         </span>
       </p>
       <section className="card p-5">
@@ -72,7 +72,7 @@ export function SponsorsPage() {
                   <h2 className="text-lg">{l(s.name)}</h2>
                   <p className="text-sm text-ink-soft">{l(s.kind)}</p>
                 </div>
-                <StatusBadge tone="notice">{SPONSOR_STATUS_LABEL}</StatusBadge>
+                <StatusBadge tone="notice">{l(SPONSOR_STATUS_LABEL)}</StatusBadge>
               </div>
               <p className="mt-2 text-xs font-semibold text-ink-soft">
                 {t('sponsors.placements', { count: mine.length })}

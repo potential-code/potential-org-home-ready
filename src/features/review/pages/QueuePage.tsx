@@ -13,7 +13,7 @@ import { ReviewCard } from '../components/ReviewCard'
 /** Khalid's review queue (C8.3). */
 export function QueuePage() {
   const { t } = useTranslation('review')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const reviews = useReviews()
   const { pending, decided, next } = useMemo(() => {
     const p = reviews
@@ -57,7 +57,7 @@ export function QueuePage() {
           icon={CalendarClock}
           label={t('queue.dueSoon')}
           value={next ? formatDate(next.dueAt, lang, { day: 'numeric', month: 'short' }) : '0'}
-          hint={next?.title ?? t('queue.dueSoonHint')}
+          hint={next ? l(next.title) : t('queue.dueSoonHint')}
         />
         <StatCard
           tone="deep"

@@ -33,7 +33,7 @@ export function MessageDialog({
       setError(t('learners.message.required'))
       return
     }
-    sendNudge(name, 1, 'direct-message')
+    sendNudge({ en: name, ar: name }, 1, 'direct-message')
     toast.success(t('learners.message.sent', { name }))
     setBody('')
     setError('')

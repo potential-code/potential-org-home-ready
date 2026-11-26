@@ -5,5 +5,5 @@ import { useLocalized } from '@/i18n'
 export function useOasis() {
   const { l } = useLocalized()
   const sponsor = SPONSORS.find((s) => s.id === 'SP-OASIS')
-  return { name: l(sponsor?.name), status: SPONSOR_STATUS_LABEL }
+  return { name: l(sponsor?.name), status: l(SPONSOR_STATUS_LABEL) }
 }

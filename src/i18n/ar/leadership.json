@@ -1,211 +1,211 @@
 {
   "pages": {
-    "impact": "Impact",
-    "funnel": "Funnel",
-    "reports": "Reports"
+    "impact": "الأثر",
+    "funnel": "مسار التحويل",
+    "reports": "التقارير"
   },
   "banner": {
-    "eyebrow": "Home Ready pilot · read-only",
-    "impactTitle": "Impact",
-    "storyLabel": "Impact story",
-    "story": "In the pilot so far, {{useful}}% of people who joined took a useful step within 14 days, and {{returned}}% came back within 30 days. Learners' confidence about the real cost of a home rose from {{pre}} to {{post}} out of 5.",
-    "funnelTitle": "Funnel",
-    "funnelBody": "From sign-up to a habit: how many people reach each step of Home Ready.",
-    "reportsTitle": "Reports",
-    "reportsBody": "Download the scorecard and summaries for the board and partners. Aggregates only, no personal data."
+    "eyebrow": "المرحلة التجريبية من جاهز للسكن · للعرض فقط",
+    "impactTitle": "الأثر",
+    "storyLabel": "قصة الأثر",
+    "story": "حتى الآن في المرحلة التجريبية، اتخذ {{useful}}% ممن انضموا خطوة مفيدة خلال 14 يوماً، وعاد {{returned}}% منهم خلال 30 يوماً. وارتفعت ثقة المتعلمين بفهم التكلفة الحقيقية للمسكن من {{pre}} إلى {{post}} من 5.",
+    "funnelTitle": "مسار التحويل",
+    "funnelBody": "من التسجيل إلى الاستخدام المنتظم: كم شخصاً يصل إلى كل خطوة في جاهز للسكن.",
+    "reportsTitle": "التقارير",
+    "reportsBody": "نزّل بطاقة الأداء والملخصات لمجلس الإدارة والشركاء. بيانات مجمّعة فقط، دون أي بيانات شخصية."
   },
   "trend": {
-    "up": "Rising",
-    "flat": "Steady"
+    "up": "في ارتفاع",
+    "flat": "مستقر"
   },
   "kpi": {
-    "target": "Target {{value}}",
+    "target": "المستهدف {{value}}",
     "k1": {
-      "label": "K1 Decision and next action",
-      "definition": "Journeys that record completion and a saved next action, divided by journeys built.",
-      "value": "{{working}} of {{built}}",
-      "detail": "Pilot: {{completed}} journeys completed, {{withNext}} with a saved next action ({{pct}}%)",
-      "target": "2 of 2"
+      "label": "K1 القرار والإجراء التالي",
+      "definition": "الرحلات التي تسجل الإكمال وإجراءً تالياً محفوظاً، مقسومة على عدد الرحلات المبنية.",
+      "value": "{{working}} من {{built}}",
+      "detail": "المرحلة التجريبية: {{completed}} رحلة مكتملة، منها {{withNext}} بإجراء تالٍ محفوظ ({{pct}}%)",
+      "target": "2 من 2"
     },
     "k2": {
-      "label": "K2 Calculator and source checks",
-      "definition": "Working calculators divided by 1; sourced and dated claims divided by all claims shown.",
-      "value": "{{working}} of 1; {{pct}}%",
-      "detail": "{{sourced}} of {{total}} claims sourced and dated",
-      "target": "1 of 1; 100%"
+      "label": "K2 الحاسبة والتحقق من المصادر",
+      "definition": "الحاسبات العاملة مقسومة على 1؛ والمعلومات الموثقة المصدر والمؤرخة مقسومة على جميع المعلومات المعروضة.",
+      "value": "{{working}} من 1؛ {{pct}}%",
+      "detail": "{{sourced}} من {{total}} معلومة موثقة المصدر ومؤرخة",
+      "target": "1 من 1؛ 100%"
     },
     "k3": {
-      "label": "K3 First useful action",
-      "definition": "Unique sign-ups who complete a journey or save a checklist or calculator result within 14 days, divided by sign-ups at least 14 days old.",
-      "detail": "{{useful}} of {{joined}} sign-ups",
-      "target": "50% by day 14"
+      "label": "K3 أول إجراء مفيد",
+      "definition": "المسجلون الفريدون الذين يكملون رحلة أو يحفظون قائمة تحقق أو نتيجة حاسبة خلال 14 يوماً، مقسومون على المسجلين منذ 14 يوماً على الأقل.",
+      "detail": "{{useful}} من {{joined}} مسجلاً",
+      "target": "50% بحلول اليوم 14"
     },
     "k4": {
-      "label": "K4 Return and trust",
-      "definition": "Sign-ups with a return session within 30 days, divided by sign-ups at least 30 days old; unconsented partner shares.",
-      "detail": "{{returned}} of {{eligible}}; {{unconsented}} unconsented shares; {{reminders}} reminder opt-ins; {{consented}} consented partner requests",
-      "target": "25%; 0"
+      "label": "K4 العودة والثقة",
+      "definition": "المسجلون الذين عادوا بجلسة جديدة خلال 30 يوماً، مقسومون على المسجلين منذ 30 يوماً على الأقل؛ ومشاركات البيانات مع الشركاء دون موافقة.",
+      "detail": "{{returned}} من {{eligible}}؛ {{unconsented}} مشاركة دون موافقة؛ {{reminders}} اشتراكاً في التذكيرات؛ {{consented}} طلباً للشركاء بموافقة",
+      "target": "25%؛ 0"
     }
   },
   "filters": {
-    "title": "Filter the view",
-    "range": "Date range",
-    "track": "Track",
-    "emirate": "Emirate",
-    "source": "Source",
-    "household": "Household type",
-    "language": "Language",
-    "all": "All",
-    "clear": "Clear filters",
+    "title": "تصفية العرض",
+    "range": "الفترة الزمنية",
+    "track": "المسار",
+    "emirate": "الإمارة",
+    "source": "المصدر",
+    "household": "نوع الأسرة",
+    "language": "اللغة",
+    "all": "الكل",
+    "clear": "مسح عوامل التصفية",
     "ranges": {
-      "12": "Last 12 weeks",
-      "8": "Last 8 weeks",
-      "4": "Last 4 weeks"
+      "12": "آخر 12 أسبوعاً",
+      "8": "آخر 8 أسابيع",
+      "4": "آخر 4 أسابيع"
     },
     "tracks": {
-      "A": "Renting",
-      "B": "Buying"
+      "A": "الإيجار",
+      "B": "الشراء"
     },
     "emirates": {
-      "dubai": "Dubai",
-      "sharjah": "Sharjah",
-      "abu-dhabi": "Abu Dhabi",
-      "other": "Other emirates"
+      "dubai": "دبي",
+      "sharjah": "الشارقة",
+      "abu-dhabi": "أبوظبي",
+      "other": "إمارات أخرى"
     },
     "sources": {
-      "social": "Social",
-      "search": "Search",
-      "employer": "Employer",
-      "friend": "Friend",
-      "partner": "Partner offer",
-      "event": "Event",
-      "other": "Partner offer and event"
+      "social": "وسائل التواصل الاجتماعي",
+      "search": "محركات البحث",
+      "employer": "جهة العمل",
+      "friend": "صديق",
+      "partner": "عرض شريك",
+      "event": "فعالية",
+      "other": "عرض شريك وفعالية"
     },
     "households": {
-      "single": "Single",
-      "couple": "Couple",
-      "family": "Family",
-      "sharing": "Sharing"
+      "single": "فرد",
+      "couple": "زوجان",
+      "family": "عائلة",
+      "sharing": "سكن مشترك"
     },
     "languages": {
-      "en": "English",
-      "ar": "Arabic"
+      "en": "الإنجليزية",
+      "ar": "العربية"
     },
-    "filtered": "Filtered view",
-    "segment": "About {{count}} of {{total}} sign-ups in this segment",
-    "segmentNote": "Estimated from the pilot mix. Charts follow the filters; KPI tiles always show the whole pilot."
+    "filtered": "عرض مُصفّى",
+    "segment": "نحو {{count}} من {{total}} مسجلاً في هذه الفئة",
+    "segmentNote": "تقدير مبني على تركيبة المرحلة التجريبية. تتبع الرسوم البيانية عوامل التصفية، أما بطاقات المؤشرات فتعرض دائماً المرحلة التجريبية كاملة."
   },
   "charts": {
-    "signups": "Sign-ups by week and source",
-    "signupsSub": "{{total}} sign-ups in the selected weeks, stacked by source",
-    "week": "Week starting",
-    "total": "Total",
-    "completion": "Track and video completion",
-    "completionSub": "Share of learners who started the track and completed all lessons and videos",
-    "completionSeries": "Completed",
-    "track": "Track",
-    "confidence": "Confidence about the real cost of a home",
-    "confidenceSub": "Average self-rating out of 5, pre and post survey",
-    "confidenceSeries": "Average rating",
-    "pre": "Before Home Ready",
-    "post": "After Home Ready",
-    "scores": "Journey score distribution",
-    "scoresSub": "{{count}} completed decision journeys by score band",
-    "scoresSeries": "Journeys",
-    "band": "Score band",
-    "sponsor": "Sponsor summary",
-    "sponsorSub": "Aggregate sample sponsor activity. No personal data is shared without the learner's separate opt-in.",
-    "sponsorSeries": "Count",
-    "impressions": "Impressions",
-    "calculatorRuns": "Calculator runs with placement visible",
-    "offerViews": "Offer views",
-    "consentedRequests": "Consented partner requests",
-    "measure": "Measure",
-    "value": "Value",
-    "certificates": "Certificates issued: {{total}} (Track A {{a}}, Track B {{b}})",
+    "signups": "التسجيلات حسب الأسبوع والمصدر",
+    "signupsSub": "{{total}} تسجيلاً في الأسابيع المحددة، موزعة حسب المصدر",
+    "week": "بداية الأسبوع",
+    "total": "الإجمالي",
+    "completion": "إكمال المسار والفيديوهات",
+    "completionSub": "نسبة المتعلمين الذين بدأوا المسار وأكملوا جميع الدروس والفيديوهات",
+    "completionSeries": "مكتمل",
+    "track": "المسار",
+    "confidence": "الثقة بفهم التكلفة الحقيقية للمسكن",
+    "confidenceSub": "متوسط التقييم الذاتي من 5، في استبيان ما قبل البرنامج وما بعده",
+    "confidenceSeries": "متوسط التقييم",
+    "pre": "قبل جاهز للسكن",
+    "post": "بعد جاهز للسكن",
+    "scores": "توزيع درجات الرحلات",
+    "scoresSub": "{{count}} رحلة قرار مكتملة حسب فئة الدرجة",
+    "scoresSeries": "الرحلات",
+    "band": "فئة الدرجة",
+    "sponsor": "ملخص الراعي",
+    "sponsorSub": "نشاط مجمّع لراعٍ تجريبي. لا تُشارك أي بيانات شخصية دون موافقة منفصلة من المتعلم.",
+    "sponsorSeries": "العدد",
+    "impressions": "مرات الظهور",
+    "calculatorRuns": "استخدامات الحاسبة مع ظهور الإعلان",
+    "offerViews": "مشاهدات العرض",
+    "consentedRequests": "طلبات الشركاء بموافقة",
+    "measure": "المقياس",
+    "value": "القيمة",
+    "certificates": "الشهادات الصادرة: {{total}} (المسار أ {{a}}، المسار ب {{b}})",
     "tracks": {
-      "A": "Track A Renting",
-      "B": "Track B Buying"
+      "A": "المسار أ: الإيجار",
+      "B": "المسار ب: الشراء"
     }
   },
   "funnel": {
-    "stepsTitle": "From joining to a habit",
-    "stepsSub": "Everyone who joined the pilot, step by step",
-    "ofJoined": "{{pct}}% of everyone who joined",
-    "fromPrev": "{{pct}}% of the step before",
-    "ofEligible": "{{pct}}% of {{eligible}} sign-ups at least 30 days old",
-    "optIn": "Counted across everyone who joined, not only the step before",
+    "stepsTitle": "من الانضمام إلى الاستخدام المنتظم",
+    "stepsSub": "جميع من انضموا إلى المرحلة التجريبية، خطوة بخطوة",
+    "ofJoined": "{{pct}}% من جميع من انضموا",
+    "fromPrev": "{{pct}}% من الخطوة السابقة",
+    "ofEligible": "{{pct}}% من {{eligible}} مسجلاً منذ 30 يوماً على الأقل",
+    "optIn": "محسوبة من جميع من انضموا، وليس من الخطوة السابقة فقط",
     "rates": {
-      "onboarding": "Onboarding rate",
-      "onboardingHint": "{{value}} of {{joined}} joined finished onboarding",
-      "useful": "First useful action (K3)",
-      "usefulHint": "{{value}} of {{joined}} within 14 days",
-      "returned": "Returned within 30 days (K4)",
-      "returnedHint": "{{value}} of {{eligible}} sign-ups at least 30 days old",
-      "reminders": "Reminder opt-ins",
-      "remindersHint": "{{value}} of {{joined}} joined turned on reminders"
+      "onboarding": "معدل إكمال التهيئة",
+      "onboardingHint": "{{value}} من {{joined}} منضماً أكملوا التهيئة",
+      "useful": "أول إجراء مفيد (K3)",
+      "usefulHint": "{{value}} من {{joined}} خلال 14 يوماً",
+      "returned": "العائدون خلال 30 يوماً (K4)",
+      "returnedHint": "{{value}} من {{eligible}} مسجلاً منذ 30 يوماً على الأقل",
+      "reminders": "الاشتراك في التذكيرات",
+      "remindersHint": "{{value}} من {{joined}} منضماً فعّلوا التذكيرات"
     },
-    "step": "Step",
-    "people": "People",
-    "share": "Share of joined"
+    "step": "الخطوة",
+    "people": "الأشخاص",
+    "share": "النسبة من المنضمين"
   },
   "reports": {
     "scorecard": {
-      "title": "Home Ready scorecard",
-      "body": "K1 to K4 with definition, target, current value and trend, plus pilot status counts.",
-      "format": "XLSX (opens in Excel as CSV)",
-      "action": "Download scorecard"
+      "title": "بطاقة أداء جاهز للسكن",
+      "body": "المؤشرات من K1 إلى K4 مع التعريف والمستهدف والقيمة الحالية والاتجاه، إضافة إلى أعداد حالة المرحلة التجريبية.",
+      "format": "XLSX (يُفتح في Excel بصيغة CSV)",
+      "action": "تنزيل بطاقة الأداء"
     },
     "summary": {
-      "title": "Leadership summary",
-      "body": "One page for the board: impact story, KPIs, funnel and the learner mix.",
-      "format": "PDF (print view)",
-      "action": "Open summary"
+      "title": "ملخص القيادة",
+      "body": "صفحة واحدة لمجلس الإدارة: قصة الأثر والمؤشرات ومسار التحويل وتركيبة المتعلمين.",
+      "format": "PDF (عرض الطباعة)",
+      "action": "فتح الملخص"
     },
     "sponsor": {
-      "title": "Sponsor aggregate report",
-      "body": "Impressions, calculator runs, offer views and consented requests. Counts only.",
-      "format": "PDF (print view)",
-      "action": "Open report"
+      "title": "التقرير المجمّع للراعي",
+      "body": "مرات الظهور واستخدامات الحاسبة ومشاهدات العروض والطلبات بموافقة. أعداد فقط.",
+      "format": "PDF (عرض الطباعة)",
+      "action": "فتح التقرير"
     },
-    "downloaded": "{{name}} downloaded",
-    "printTitle": "Print or save as PDF",
-    "printHint": "Choose \"Save as PDF\" in the print dialog.",
-    "print": "Print or save as PDF",
-    "generated": "Generated {{date}} · Home Ready by Potential.org",
-    "historyTitle": "Your downloads",
-    "historySub": "Every download is recorded in the audit log Maya sees.",
-    "historyEmpty": "No downloads yet",
-    "historyEmptyBody": "Download a report above and it appears here with the time.",
-    "colReport": "Report",
-    "colWhen": "When",
+    "downloaded": "تم تنزيل {{name}}",
+    "printTitle": "طباعة أو حفظ بصيغة PDF",
+    "printHint": "اختر \"Save as PDF\" أو \"حفظ بصيغة PDF\" في نافذة الطباعة.",
+    "print": "طباعة أو حفظ بصيغة PDF",
+    "generated": "أُنشئ في {{date}} · جاهز للسكن من Potential.org",
+    "historyTitle": "تنزيلاتك",
+    "historySub": "يُسجَّل كل تنزيل في سجل التدقيق الذي تطّلع عليه مايا.",
+    "historyEmpty": "لا توجد تنزيلات بعد",
+    "historyEmptyBody": "نزّل أحد التقارير أعلاه وسيظهر هنا مع وقت التنزيل.",
+    "colReport": "التقرير",
+    "colWhen": "الوقت",
     "sections": {
-      "kpis": "Key indicators",
-      "funnel": "Funnel",
-      "mix": "Learner mix",
-      "status": "Pilot status",
-      "story": "Impact story"
+      "kpis": "المؤشرات الرئيسية",
+      "funnel": "مسار التحويل",
+      "mix": "تركيبة المتعلمين",
+      "status": "حالة المرحلة التجريبية",
+      "story": "قصة الأثر"
     },
     "mix": {
-      "track": "Track: Renting {{a}}%, Buying {{b}}%",
-      "emirate": "Emirate: Dubai {{dubai}}%, Sharjah {{sharjah}}%, Abu Dhabi {{abu}}%, other {{other}}%",
-      "language": "Language: English {{en}}%, Arabic {{ar}}%",
-      "source": "Source: social {{social}}%, search {{search}}%, employer {{employer}}%, friend {{friend}}%, partner offer {{partner}}%, event {{event}}%"
+      "track": "المسار: الإيجار {{a}}%، الشراء {{b}}%",
+      "emirate": "الإمارة: دبي {{dubai}}%، الشارقة {{sharjah}}%، أبوظبي {{abu}}%، أخرى {{other}}%",
+      "language": "اللغة: الإنجليزية {{en}}%، العربية {{ar}}%",
+      "source": "المصدر: وسائل التواصل {{social}}%، محركات البحث {{search}}%، جهة العمل {{employer}}%، صديق {{friend}}%، عرض شريك {{partner}}%، فعالية {{event}}%"
     },
     "status": {
-      "journeys": "Journeys completed",
-      "checklists": "Checklists saved",
-      "calcSaves": "Calculator results saved",
-      "certificates": "Certificates (Track A {{a}}, Track B {{b}})",
-      "consented": "Consented partner requests",
-      "unconsented": "Unconsented shares"
+      "journeys": "الرحلات المكتملة",
+      "checklists": "قوائم التحقق المحفوظة",
+      "calcSaves": "نتائج الحاسبة المحفوظة",
+      "certificates": "الشهادات (المسار أ {{a}}، المسار ب {{b}})",
+      "consented": "طلبات الشركاء بموافقة",
+      "unconsented": "مشاركات دون موافقة"
     },
     "csv": {
-      "kpi": "KPI",
-      "definition": "Definition and formula",
-      "target": "Target",
-      "value": "Demo value",
-      "trend": "Trend"
+      "kpi": "المؤشر",
+      "definition": "التعريف والمعادلة",
+      "target": "المستهدف",
+      "value": "القيمة التجريبية",
+      "trend": "الاتجاه"
     }
   }
 }

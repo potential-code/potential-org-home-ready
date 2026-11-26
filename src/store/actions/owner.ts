@@ -1,4 +1,5 @@
-import type { Placement, PlatformSettings } from '@shared/types'
+import type { Lang, Localized, Placement, PlatformSettings } from '@shared/types'
+import { L } from '@/data/l'
 import { now } from '@/lib/clock'
 import { getDb, update } from '../db'
 import { uid, withAudit, withNotification } from './helpers'
@@ -35,8 +36,8 @@ export function publishContent(contentId: string): boolean {
         ),
       },
       OWNER,
-      'Published',
-      item.title.en,
+      L('Published', 'تم النشر'),
+      item.title,
     ),
   )
   return true
@@ -56,7 +57,7 @@ export function returnToAuthor(approvalId: string) {
         ),
       },
       OWNER,
-      'Returned to author',
+      L('Returned to author', 'أُعيد إلى الكاتب'),
       a.title,
     )
   })
@@ -80,13 +81,13 @@ export function submitForReview(contentId: string) {
         {
           id: uid('RV'),
           contentId,
-          title: c.title.en,
+          title: c.title,
           languages: ['en' as const, 'ar' as const],
           enText: c.title.en,
           arText: c.title.ar,
           claims: c.sourceIds.map((s, i) => ({
             id: `${contentId}-c${i + 1}`,
-            text: c.title.en,
+            text: c.title,
             sourceId: s,
             checkedOn: c.checkedOn,
           })),
@@ -102,14 +103,17 @@ export function submitForReview(contentId: string) {
         notifications: withNotification(
           next,
           'reviewer',
-          { en: `New in your queue: ${c.title.en}`, ar: `New in your queue: ${c.title.en}` },
-          { en: 'Submitted by Maya.', ar: 'Submitted by Maya.' },
+          {
+            en: `New in your queue: ${c.title.en}`,
+            ar: `جديد في قائمتك: ${c.title.ar || c.title.en}`,
+          },
+          { en: 'Submitted by Maya.', ar: 'أرسلته مايا.' },
           '/review/queue',
         ),
       },
       OWNER,
-      'Submitted for review',
-      c.title.en,
+      L('Submitted for review', 'أُرسل للمراجعة'),
+      c.title,
     )
   })
 }
@@ -123,8 +127,8 @@ export function addPlacement(draft: Omit<Placement, 'id' | 'createdAt' | 'status
         placements: [...db.placements, { ...draft, id, status: 'live' as const, createdAt: now() }],
       },
       OWNER,
-      'Placement added',
-      draft.label.en,
+      L('Placement added', 'أُضيفت مساحة إعلانية'),
+      draft.label,
     ),
   )
   return id
@@ -141,59 +145,87 @@ export function setPlacementStatus(placementId: string, status: Placement['statu
         placements: db.placements.map((x) => (x.id === placementId ? { ...x, status } : x)),
       },
       OWNER,
-      status === 'paused' ? 'Placement paused' : 'Placement resumed',
-      p.label.en,
+      status === 'paused'
+        ? L('Placement paused', 'أُوقفت المساحة الإعلانية مؤقتاً')
+        : L('Placement resumed', 'استُؤنفت المساحة الإعلانية'),
+      p.label,
     )
   })
 }
 
 /** Learners: send the "no useful action after 7 days" nudge to an audience. */
-export function sendNudge(audience: string, count: number, templateId = 'ET-nudge') {
+export function sendNudge(audience: Localized, count: number, templateId = 'ET-nudge') {
   update((db) =>
     withAudit(
       { ...db, nudges: [{ id: uid('NU'), templateId, audience, count, at: now() }, ...db.nudges] },
       OWNER,
-      `Nudge sent to ${count} learners`,
+      L(`Nudge sent to ${count} learners`, `أُرسل تذكير إلى ${count} من المتعلمين`),
       audience,
     ),
   )
 }
 
+/** Title and body are typed live by Maya: stored as typed in both languages. */
 export function scheduleAnnouncement(title: string, body: string, scheduledFor: string) {
   update((db) =>
     withAudit(
       {
         ...db,
         announcements: [
-          { id: uid('AN'), title, body, scheduledFor, status: 'scheduled' as const },
+          {
+            id: uid('AN'),
+            title: L(title, title),
+            body: L(body, body),
+            scheduledFor,
+            status: 'scheduled' as const,
+          },
           ...db.announcements,
         ],
       },
       OWNER,
-      'Announcement scheduled',
-      title,
+      L('Announcement scheduled', 'جُدول إعلان'),
+      L(title, title),
     ),
   )
 }
 
-export function updateTemplate(id: string, subject: string, body: string) {
+/** Edits the template in the language being shown (`lang`); the other version is kept. */
+export function updateTemplate(id: string, subject: string, body: string, lang: Lang = 'en') {
   update((db) =>
     withAudit(
-      { ...db, templates: db.templates.map((t) => (t.id === id ? { ...t, subject, body } : t)) },
+      {
+        ...db,
+        templates: db.templates.map((t) =>
+          t.id === id
+            ? {
+                ...t,
+                subject: { ...t.subject, [lang]: subject },
+                body: { ...t.body, [lang]: body },
+              }
+            : t,
+        ),
+      },
       OWNER,
-      'Template edited',
-      id,
+      L('Template edited', 'عُدّل القالب'),
+      L(id, id),
     ),
   )
 }
 
 export function saveSettings(settings: PlatformSettings) {
-  update((db) => withAudit({ ...db, settings }, OWNER, 'Settings saved', 'Platform settings'))
+  update((db) =>
+    withAudit(
+      { ...db, settings },
+      OWNER,
+      L('Settings saved', 'حُفظت الإعدادات'),
+      L('Platform settings', 'إعدادات المنصة'),
+    ),
+  )
 }
 
 /** Reports: record a download in the audit log (files are simulated). */
-export function logExport(actor: string, report: string) {
-  update((db) => withAudit(db, actor, 'Report downloaded', report))
+export function logExport(actor: string, report: Localized) {
+  update((db) => withAudit(db, actor, L('Report downloaded', 'نُزّل تقرير'), report))
 }
 
 /** Edit a content item's English title (Maya's Content edit dialog). Audited. */
@@ -211,8 +243,8 @@ export function updateContent(contentId: string, titleEn: string): void {
         ),
       },
       OWNER,
-      'Edited',
-      titleEn.trim(),
+      L('Edited', 'عُدّل'),
+      { ...item.title, en: titleEn.trim() },
     ),
   )
 }

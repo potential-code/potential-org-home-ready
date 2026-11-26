@@ -12,7 +12,7 @@ import { ReviewStatusBadge } from '../components/ReviewStatusBadge'
 /** Khalid's review item (C8.3): EN | AR side by side, claims, comment, decision. */
 export function ReviewItemPage() {
   const { t } = useTranslation('review')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const { itemId } = useParams({ from: '/review/item/$itemId' })
   const r = useReview(itemId)
   const crumbs = [{ label: t('item.back'), to: '/review/queue' }]
@@ -27,8 +27,8 @@ export function ReviewItemPage() {
   return (
     <div className="space-y-5">
       <PageHeader
-        title={r.title}
-        crumbs={[...crumbs, { label: r.title }]}
+        title={l(r.title)}
+        crumbs={[...crumbs, { label: l(r.title) }]}
         eyebrow={<ReviewStatusBadge status={r.status} />}
         description={
           <span className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
@@ -43,14 +43,16 @@ export function ReviewItemPage() {
       <div className="grid gap-5 md:grid-cols-2">
         <section className="card p-5">
           <h2 className="text-sm font-bold text-ink-soft">{t('item.english')}</h2>
-          <p className="mt-2 leading-relaxed">{r.enText}</p>
+          <p dir="ltr" lang="en" className="mt-2 text-start leading-relaxed">
+            {r.enText}
+          </p>
         </section>
         <section className="card p-5" lang="ar" dir="rtl">
           <h2 className="text-sm font-bold text-ink-soft">{t('item.arabic')}</h2>
           {r.arText ? (
             <p className="mt-2 leading-loose">{r.arText}</p>
           ) : (
-            <p className="mt-2 text-sm text-ink-soft" dir="ltr" lang="en">
+            <p className="mt-2 text-sm text-ink-soft" dir="auto">
               {t('item.noArabic')}
             </p>
           )}

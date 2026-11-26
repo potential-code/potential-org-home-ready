@@ -8,18 +8,22 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { formatDate, formatTime, useLocalized } from '@/i18n'
 import { useAudit } from '@/store/hooks'
 import { CONSENT_ACTIONS, PUBLISH_ACTIONS } from '../config'
+import { useActorName } from '../hooks/use-actor-name'
 
 type Kind = 'publish' | 'consent'
 
 /** Settings: audit log of publish and consent events (C12). */
 export function AuditLogCard() {
   const { t } = useTranslation('owner')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const audit = useAudit()
+  const actorName = useActorName()
   const [kind, setKind] = useState<Kind>('publish')
   const rows = useMemo(
     () =>
-      audit.filter((a) => (kind === 'publish' ? PUBLISH_ACTIONS : CONSENT_ACTIONS).test(a.action)),
+      audit.filter((a) =>
+        (kind === 'publish' ? PUBLISH_ACTIONS : CONSENT_ACTIONS).test(a.action.en),
+      ),
     [audit, kind],
   )
   const columns: Column<AuditEntry>[] = [
@@ -29,14 +33,19 @@ export function AuditLogCard() {
       sortValue: (a) => a.at,
       cell: (a) => `${formatDate(a.at, lang)}, ${formatTime(a.at, lang)}`,
     },
-    { key: 'actor', header: t('settings.who'), sortValue: (a) => a.actor, cell: (a) => a.actor },
+    {
+      key: 'actor',
+      header: t('settings.who'),
+      sortValue: (a) => a.actor,
+      cell: (a) => actorName(a.actor),
+    },
     {
       key: 'action',
       header: t('settings.what'),
-      sortValue: (a) => a.action,
-      cell: (a) => <span className="font-semibold">{a.action}</span>,
+      sortValue: (a) => l(a.action),
+      cell: (a) => <span className="font-semibold">{l(a.action)}</span>,
     },
-    { key: 'target', header: t('settings.target'), cell: (a) => a.target },
+    { key: 'target', header: t('settings.target'), cell: (a) => l(a.target) },
   ]
   return (
     <section className="space-y-3">

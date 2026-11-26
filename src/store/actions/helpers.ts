@@ -20,7 +20,7 @@ export function actorName(db: DemoDb, personaId: PersonaId | null): string {
   return db.learners.find((l) => l.personaId === personaId)?.name ?? personaId
 }
 
-export function withAudit(db: DemoDb, actor: string, action: string, target: string): DemoDb {
+export function withAudit(db: DemoDb, actor: string, action: Localized, target: Localized): DemoDb {
   return { ...db, audit: [{ id: uid('AU'), at: now(), actor, action, target }, ...db.audit] }
 }
 

@@ -18,11 +18,11 @@ export function ReportsPage() {
       [t('reports.metric'), t('reports.value')],
       ...sections.flatMap((s) => s.rows.map((r) => [`${s.title}: ${r.label}`, r.value])),
     ])
-    logExport('Maya', 'Home Ready scorecard (XLSX)')
+    logExport('Maya', { en: 'Home Ready scorecard (XLSX)', ar: 'بطاقة أداء جاهز للسكن (XLSX)' })
     toast.success(t('reports.xlsxDone'))
   }
   const pdf = () => {
-    logExport('Maya', 'Home Ready scorecard (PDF)')
+    logExport('Maya', { en: 'Home Ready scorecard (PDF)', ar: 'بطاقة أداء جاهز للسكن (PDF)' })
     toast.success(t('reports.pdfDone'))
     window.print()
   }

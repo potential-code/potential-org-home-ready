@@ -121,5 +121,6 @@
   "placeholder": {
     "title": "This screen is being built",
     "body": "The foundation is in place. The full screen arrives in the next build step."
-  }
+  },
+  "toastRegion": "Notifications"
 }

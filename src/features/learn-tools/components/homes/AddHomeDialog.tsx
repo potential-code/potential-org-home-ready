@@ -68,7 +68,7 @@ export function AddHomeDialog({
       annualRent: Math.round(rent),
       cheques: Number(f.cheques),
       furnished: f.furnished,
-      notes: f.notes.trim(),
+      notes: { en: f.notes.trim(), ar: f.notes.trim() },
     })
     toast.success(t('homes.dialog.added'))
     onOpenChange(false)

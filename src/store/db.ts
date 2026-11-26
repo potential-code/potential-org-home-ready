@@ -66,7 +66,7 @@ import { calcSummary } from '@/domain/calculator-summary'
  * Bump VERSION whenever the shape of DemoDb changes, so old saved data is discarded.
  */
 const KEY = config.storageKey
-const VERSION = 3
+const VERSION = 4
 
 /** A demo persona registered live through /register (not in mockup.config.ts). */
 export interface RegisteredPersona {

@@ -28,7 +28,7 @@ export interface SavedChecklistSeed {
   /** Number of items ticked (first N, skipping ids in `skip`). */
   tickedCount: number
   skip?: string[]
-  notes?: Record<string, string>
+  notes?: Record<string, ReturnType<typeof L>>
   createdAt: string
 }
 
@@ -39,7 +39,12 @@ export const SAVED_CHECKLIST_SEED: SavedChecklistSeed[] = [
     templateId: 'viewing',
     title: L('Viewing checklist: 2BR, Al Barsha South', 'قائمة المعاينة: غرفتان، البرشاء جنوب'),
     tickedCount: 14,
-    notes: { 'viewing-2': 'AC in the second bedroom is weak; ask for a service.' },
+    notes: {
+      'viewing-2': L(
+        'AC in the second bedroom is weak; ask for a service.',
+        'التكييف في غرفة النوم الثانية ضعيف؛ اطلب صيانته.',
+      ),
+    },
     createdAt: '2026-11-19T18:10:00+04:00',
   },
   {
@@ -109,7 +114,10 @@ export const SEED_SHORTLIST: ShortlistHome[] = [
     annualRent: 95000,
     cheques: 4,
     furnished: false,
-    notes: 'Current home. Close to work, school run is 15 minutes.',
+    notes: L(
+      'Current home. Close to work, school run is 15 minutes.',
+      'المسكن الحالي. قريب من العمل، والطريق إلى المدرسة 15 دقيقة.',
+    ),
     addedAt: '2026-11-19T18:00:00+04:00',
   },
   {
@@ -121,7 +129,10 @@ export const SEED_SHORTLIST: ShortlistHome[] = [
     annualRent: 82000,
     cheques: 2,
     furnished: false,
-    notes: 'Bigger balcony; commute 10 minutes longer at peak.',
+    notes: L(
+      'Bigger balcony; commute 10 minutes longer at peak.',
+      'شرفة أكبر؛ والتنقل أطول بـ 10 دقائق في وقت الذروة.',
+    ),
     addedAt: '2026-11-19T18:20:00+04:00',
   },
   {
@@ -133,7 +144,10 @@ export const SEED_SHORTLIST: ShortlistHome[] = [
     annualRent: 70000,
     cheques: 1,
     furnished: false,
-    notes: 'Cheapest, but one cheque means more cash up front.',
+    notes: L(
+      'Cheapest, but one cheque means more cash up front.',
+      'الأرخص، لكن الدفع بشيك واحد يعني مبلغاً أكبر مقدماً.',
+    ),
     addedAt: '2026-11-20T08:40:00+04:00',
   },
 ]

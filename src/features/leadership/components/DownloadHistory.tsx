@@ -11,18 +11,18 @@ type Entry = ReturnType<typeof useAudit>[number]
 /** Downloads by the signed-in staff member, read from the shared audit log. */
 export function DownloadHistory({ actor }: { actor: string }) {
   const { t } = useTranslation('leadership')
-  const { lang } = useLocalized()
+  const { l, lang } = useLocalized()
   const audit = useAudit()
   const rows = useMemo(
-    () => audit.filter((a) => a.action === 'Report downloaded' && a.actor === actor),
+    () => audit.filter((a) => a.action.en === 'Report downloaded' && a.actor === actor),
     [audit, actor],
   )
   const columns: Column<Entry>[] = [
     {
       key: 'report',
       header: t('reports.colReport'),
-      cell: (r) => r.target,
-      sortValue: (r) => r.target,
+      cell: (r) => l(r.target),
+      sortValue: (r) => l(r.target),
     },
     {
       key: 'when',

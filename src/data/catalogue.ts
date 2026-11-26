@@ -3,7 +3,7 @@ import { L } from './l'
 
 /** Sponsors, placements, offers (C11.3), events (C11.4), badges (C11.5). All fictional samples. */
 
-export const SPONSOR_STATUS_LABEL = 'Sample – not contracted'
+export const SPONSOR_STATUS_LABEL = L('Sample – not contracted', 'نموذج، غير متعاقد')
 
 export const SPONSORS: Sponsor[] = [
   {
@@ -120,7 +120,10 @@ export const SEED_PLACEMENTS: Placement[] = [
 ]
 
 /** The placement rule shown with every placement. */
-export const PLACEMENT_RULE = 'No personal data, label always visible.'
+export const PLACEMENT_RULE = L(
+  'No personal data, label always visible.',
+  'لا بيانات شخصية، والوسم ظاهر دائماً.',
+)
 
 export const OFFERS: Offer[] = [
   {

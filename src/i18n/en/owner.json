@@ -283,7 +283,15 @@
     "nudgesEmpty": "No nudges sent in this demo yet. Send one from Learners.",
     "nudgeLine": "{{count}} learners: {{audience}}",
     "noAnnouncements": "No announcements yet",
-    "noAnnouncementsBody": "Schedule one to tell learners about new content."
+    "noAnnouncementsBody": "Schedule one to tell learners about new content.",
+    "when": {
+      "ET-welcome": "On registration",
+      "ET-nudge": "7 days after sign-up with no useful action, 10:00",
+      "ET-renewal": "90 days before contract end (opt-in), 09:00",
+      "ET-event": "24 hours before the event",
+      "ET-certificate": "When a certificate is issued",
+      "ET-partner": "When a partner request is passed on (opt-in)"
+    }
   },
   "reports": {
     "description": "Scorecard for the pilot (Maya's brief section 8). Figures match the leadership view.",

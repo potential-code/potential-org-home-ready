@@ -21,10 +21,10 @@ export function useContentColumns(
         {
           key: 'item',
           header: t('content.col.item'),
-          sortValue: (c) => titleOf(c).en,
+          sortValue: (c) => l(titleOf(c)),
           cell: (c) => (
             <span className="flex flex-col gap-1">
-              <span className="font-semibold">{titleOf(c).en}</span>
+              <span className="font-semibold">{l(titleOf(c))}</span>
               <span className="text-xs text-ink-soft">
                 {t(`content.kinds.${c.kind}`)}
                 {c.track ? ` · ${t(`track.${c.track}`)}` : ''}
@@ -73,7 +73,7 @@ export function useContentColumns(
         {
           key: 'actions',
           header: t('common.actions'),
-          cell: (c) => <ContentActions item={c} title={titleOf(c).en} onEdit={() => onEdit(c)} />,
+          cell: (c) => <ContentActions item={c} title={l(titleOf(c))} onEdit={() => onEdit(c)} />,
         },
       ] satisfies Column<ContentItem>[],
     [t, l, lang, titleOf, onEdit],

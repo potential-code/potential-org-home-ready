@@ -1,3 +1,4 @@
+import { L } from '@/data/l'
 import { now } from '@/lib/clock'
 import { update } from '../db'
 import { uid, withAudit, withNotification } from './helpers'
@@ -33,7 +34,7 @@ export function approveReview(reviewId: string, comment = '') {
           contentId: r.contentId,
           title: r.title,
           outcome: 'approved' as const,
-          note: comment || 'Approved.',
+          note: comment ? L(comment, comment) : L('Approved.', 'تمت الموافقة.'),
           reviewer: REVIEWER,
           at,
           published: false,
@@ -47,16 +48,16 @@ export function approveReview(reviewId: string, comment = '') {
         notifications: withNotification(
           next,
           'owner',
-          { en: `Approved: ${r.title}`, ar: `Approved: ${r.title}` },
+          { en: `Approved: ${r.title.en}`, ar: `تمت الموافقة: ${r.title.ar || r.title.en}` },
           {
-            en: `${REVIEWER} approved ${r.title} (${langs}). Ready to publish.`,
-            ar: `${REVIEWER} approved ${r.title} (${langs}). Ready to publish.`,
+            en: `${REVIEWER} approved ${r.title.en} (${langs}). Ready to publish.`,
+            ar: `وافق خالد المنصوري على ${r.title.ar || r.title.en} (${langs}). جاهز للنشر.`,
           },
           '/admin/approvals',
         ),
       },
       REVIEWER,
-      'Approved',
+      L('Approved', 'تمت الموافقة'),
       r.title,
     )
   })
@@ -81,7 +82,7 @@ export function requestChanges(reviewId: string, comment: string) {
           contentId: r.contentId,
           title: r.title,
           outcome: 'changes' as const,
-          note: `Changes requested: ${comment}`,
+          note: L(`Changes requested: ${comment}`, `طُلبت تعديلات: ${comment}`),
           reviewer: REVIEWER,
           at,
           published: false,
@@ -89,7 +90,7 @@ export function requestChanges(reviewId: string, comment: string) {
         ...db.approvals,
       ],
     }
-    return withAudit(next, REVIEWER, 'Changes requested', r.title)
+    return withAudit(next, REVIEWER, L('Changes requested', 'طُلبت تعديلات'), r.title)
   })
 }
 

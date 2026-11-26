@@ -56,7 +56,9 @@ export function setChecklistNote(checklistId: string, itemId: string, note: stri
   update((db) => ({
     ...db,
     checklists: db.checklists.map((x) =>
-      x.id === checklistId ? { ...x, notes: { ...x.notes, [itemId]: note }, updatedAt: now() } : x,
+      x.id === checklistId
+        ? { ...x, notes: { ...x.notes, [itemId]: { en: note, ar: note } }, updatedAt: now() }
+        : x,
     ),
   }))
 }

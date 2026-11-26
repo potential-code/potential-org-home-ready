@@ -194,7 +194,7 @@ export function ChecklistDetailPage() {
               checklistId={checklist.id}
               item={item}
               done={checklist.ticked.includes(item.id)}
-              note={checklist.notes[item.id]}
+              note={l(checklist.notes[item.id]) || undefined}
             />
           ))}
         </ul>

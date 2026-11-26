@@ -9,12 +9,12 @@ import { ReviewStatusBadge } from './ReviewStatusBadge'
 /** One queue item: title, languages, claims, submitted and due dates, Open item. */
 export function ReviewCard({ r }: { r: ReviewItem }) {
   const { t } = useTranslation('review')
-  const { lang } = useLocalized()
+  const { l: loc, lang } = useLocalized()
   return (
     <article className="card card-hover flex flex-col gap-4 p-5 sm:flex-row sm:items-center">
       <div className="min-w-0 flex-1 space-y-2">
         <ReviewStatusBadge status={r.status} />
-        <h2 className="text-lg">{r.title}</h2>
+        <h2 className="text-lg">{loc(r.title)}</h2>
         <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-ink-soft">
           <li className="flex items-center gap-1.5">
             <Languages className="size-4 text-brand" aria-hidden />
