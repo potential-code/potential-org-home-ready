@@ -1,15 +1,13 @@
 import config from '@config'
-import { useTranslation } from 'react-i18next'
 import { useLocalized } from '@/i18n'
 import { asset } from '@/lib/asset'
 import { cn } from '@/lib/utils'
 
 /**
- * Home Ready lockup. Only a WHITE Potential.org logo exists (public/brand/potential-org-white.svg),
- * so the logo image appears on dark bands only (`variant="white"`: header band, footer, sidebar,
- * auth panel), followed by the programme wordmark in Plus Jakarta Sans Bold. On light surfaces
- * (`variant="brand"`) the lockup is the wordmark plus "by Potential.org" set in text, never the image.
- * The SVG keeps its own aspect ratio (height-driven, width auto); it is never squeezed.
+ * Home Ready lockup with the official Potential.org logo (public/brand/potential/, from Rawzaba's
+ * logo set, 26 Nov 2026). Dark bands (`variant="white"`: header band, footer, sidebar, auth panel)
+ * use the white logo; light surfaces (`variant="brand"`) use the coloured primary logo. Each is
+ * followed by the programme wordmark. SVGs keep their aspect ratio (height-driven); never squeezed.
  */
 export function Logo({
   variant = 'brand',
@@ -24,7 +22,6 @@ export function Logo({
   stacked?: boolean
   className?: string
 }) {
-  const { t } = useTranslation()
   const { l } = useLocalized()
   const name = l(config.title)
   if (variant === 'white' && stacked)
@@ -32,7 +29,7 @@ export function Logo({
       <span className={cn('inline-flex flex-col items-start gap-1.5 select-none', className)}>
         <span className="flex h-7 items-center">
           <img
-            src={asset('brand/potential-org-white.svg')}
+            src={asset('brand/potential/potential-org-white.svg')}
             alt="Potential.org"
             className="-ms-1.5 h-[135%] w-auto max-w-none shrink-0"
           />
@@ -48,7 +45,7 @@ export function Logo({
         {/* The SVG has ~18% built-in clear space top and bottom: render it taller than the row so
             the wordmark ink matches the row height; flex centring keeps it aligned. */}
         <img
-          src={asset('brand/potential-org-white.svg')}
+          src={asset('brand/potential/potential-org-white.svg')}
           alt="Potential.org"
           className="h-[135%] w-auto max-w-none shrink-0"
         />
@@ -67,17 +64,20 @@ export function Logo({
       </span>
     )
   return (
-    <span className={cn('inline-flex h-7 items-baseline gap-1.5 select-none', className)}>
-      <span className="text-lg leading-none font-bold tracking-tight whitespace-nowrap text-brand-deep">
-        {name}
-      </span>
+    <span className={cn('inline-flex h-7 items-center gap-2.5 select-none', className)}>
+      <img
+        src={asset('brand/potential/potential-org-primary.svg')}
+        alt="Potential.org"
+        className="h-[135%] w-auto max-w-none shrink-0"
+      />
+      <span className={cn('h-[62%] w-px shrink-0 bg-ink/20', compact && 'hidden')} aria-hidden />
       <span
         className={cn(
-          'text-xs leading-none font-bold whitespace-nowrap text-ink-soft',
+          'text-[1.05rem] leading-none font-bold tracking-tight whitespace-nowrap text-brand-deep',
           compact && 'sr-only',
         )}
       >
-        {t('byPotential')}
+        {name}
       </span>
     </span>
   )

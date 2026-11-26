@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Motif } from '@/components/brand'
 import { Logo } from '@/components/shared/Logo'
+import { asset } from '@/lib/asset'
 import { SECTIONS } from '../config'
 import { scrollToId } from '../scroll-to'
 
@@ -121,12 +122,13 @@ export function SiteFooter({ demoTag }: { demoTag?: ReactNode }) {
       <div className="relative border-t border-white/15">
         <div className="container-page flex flex-col gap-2 py-4 text-xs text-white/80 sm:flex-row sm:items-center sm:justify-between">
           <p>{t('footer.disclaimer')}</p>
-          <p className="flex items-baseline gap-1.5" dir="ltr">
+          <p className="flex items-center gap-2" dir="ltr">
             <span>{t('site.poweredBy')}</span>
-            <span className="text-base font-extrabold tracking-tight">
-              <span className="text-white">potential</span>
-              <span className="text-brand-accent">.com</span>
-            </span>
+            <img
+              src={asset('brand/potential/potential-com-white.svg')}
+              alt="Potential.com"
+              className="h-5 w-auto"
+            />
           </p>
         </div>
       </div>
