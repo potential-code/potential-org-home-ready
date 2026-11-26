@@ -1,0 +1,20 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-25T12:30:25.092Z",
+        "reason": "Client plan MKP-2026-002 C3 specifies Inter; Aliya's Gate 1 answer 9 keeps C3 for all branding except primary/secondary colours"
+      },
+      {
+        "rule": "overused-font",
+        "value": "plus jakarta sans",
+        "createdAt": "2026-11-25T15:13:06.120Z",
+        "reason": "user confirmed: Aliya at Gate 2 (25 Nov 2026) said to follow the client website for fonts; Plus Jakarta Sans is the potential.org wordmark face"
+      }
+    ]
+  }
+}

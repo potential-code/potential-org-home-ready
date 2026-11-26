@@ -1,0 +1,412 @@
+{
+  "nav": {
+    "tracks": "Tracks",
+    "journeys": "Decision journeys",
+    "calculator": "Calculator",
+    "events": "Events",
+    "faq": "FAQ"
+  },
+  "header": {
+    "brand": "Home Ready · by Potential.org",
+    "login": "Log in",
+    "join": "Join free",
+    "langEn": "EN",
+    "langAr": "عربي",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "line1": "Rent or buy in the UAE,",
+    "line2": "with your eyes open.",
+    "body": "Free short videos, scored decision journeys and a calculator that show what a home really costs and what to check before you sign.",
+    "primary": "Join free",
+    "secondary": "See how it works",
+    "proof": "Free · English and Arabic · Dubai rules first, more emirates soon",
+    "imageAlt": "A young couple at the open door of their new apartment, holding up the keys",
+    "badge": "Checked on 25 Nov 2026",
+    "badgeBody": "Every fee and rule has an official source"
+  },
+  "tracks": {
+    "title": "Programme content",
+    "trackLabel": "Track {{letter}}",
+    "level": "Beginner",
+    "preview": "Preview track",
+    "unitsLabel": "Units in this track",
+    "sponsorAria": "Sponsored sample slot",
+    "sponsorPartner": "Track partner: Oasis Home Finance",
+    "sponsorSample": "(fictional sample)",
+    "renting": {
+      "title": "Renting in the UAE",
+      "videos": "5 videos + readings",
+      "duration": "About 45 minutes",
+      "description": "Know what renting really costs, what to check before you sign and your rights at renewal and move-out. Dubai rules first; each lesson says which emirate it applies to.",
+      "units": {
+        "A1": "Your real budget",
+        "A2": "Choosing the area",
+        "A3": "The viewing",
+        "A4": "The contract and renewal",
+        "A5": "Moving in and moving out"
+      }
+    },
+    "buying": {
+      "title": "Buying your first home",
+      "videos": "5 videos + readings",
+      "duration": "About 50 minutes",
+      "description": "See when buying makes sense for you, what you can afford, the risks of ready and off-plan homes, and the checks before you pay.",
+      "units": {
+        "B1": "Rent or buy?",
+        "B2": "What you can afford",
+        "B3": "Ready or off-plan",
+        "B4": "Due diligence",
+        "B5": "The transaction and after"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Home Ready is education, not legal, financial or mortgage advice.",
+    "explore": "Explore",
+    "account": "Account",
+    "disclaimer": "All names, figures and records on this site are fictional and for demonstration only."
+  },
+  "pages": {
+    "faq": "Frequently asked questions",
+    "terms": "Terms of use",
+    "privacy": "Privacy notice",
+    "contact": "Contact us",
+    "editorial": "Editorial policy"
+  },
+  "about": {
+    "eyebrow": "About the programme",
+    "title": "Free, independent and sourced",
+    "p1": "Home Ready is a free programme from Potential.org, the nonprofit arm of Potential.com. It helps people in the UAE make better decisions about renting or buying a home: what to check, what it really costs, what to ask, and when renting or buying makes more sense for you.",
+    "quote": "We never recommend specific properties; we teach you how to judge them.",
+    "p2": "Every fee and rule we show has an official source and the date we checked it. Home Ready is education, not legal, financial or mortgage advice."
+  },
+  "why": {
+    "eyebrow": "Why it matters",
+    "title": "Better housing decisions, one step at a time.",
+    "body": "Housing is the biggest monthly cost for most UAE residents. A clear checklist and a true-cost view before you sign can save thousands of dirhams and a lot of stress.",
+    "targets": "Pilot targets",
+    "k3": "take a useful first step within 14 days",
+    "k4": "come back within 30 days",
+    "k2": "of rules and fees sourced and dated"
+  },
+  "who": {
+    "eyebrow": "Who it is for",
+    "title": "Start from where you are",
+    "cta": "Start here",
+    "mover": {
+      "title": "Moving to or within the UAE",
+      "body": "Know your real budget and what to check at a viewing."
+    },
+    "renewal": {
+      "title": "Renewing your tenancy",
+      "body": "Know your rights on renewal and rent increases."
+    },
+    "renter-buyer": {
+      "title": "Renting and wondering about buying",
+      "body": "See when buying makes sense for you."
+    },
+    "first-buyer": {
+      "title": "Buying your first home",
+      "body": "Ready or off-plan: costs, risks and due diligence."
+    }
+  },
+  "steps": {
+    "eyebrow": "How it works",
+    "title": "Five steps from sign-up to a saved plan",
+    "step": "Step {{n}}",
+    "join": {
+      "title": "Join free",
+      "body": "2-minute sign-up"
+    },
+    "pick": {
+      "title": "Pick your track",
+      "body": "Renting or Buying"
+    },
+    "watch": {
+      "title": "Watch and learn",
+      "body": "5 short videos per track"
+    },
+    "decide": {
+      "title": "Decide with confidence",
+      "body": "Scored journey + calculator"
+    },
+    "save": {
+      "title": "Save and come back",
+      "body": "Checklists, reminders and a certificate"
+    }
+  },
+  "dalil": {
+    "eyebrow": "AI experience",
+    "title": "Meet Dalil, your Home Ready guide.",
+    "body": "Dalil answers in your language, names the emirate and points you to the official source and the date it was checked.",
+    "you": "You",
+    "name": "Dalil",
+    "online": "Home Ready guide",
+    "q": "Can my landlord raise the rent at renewal in Dubai?",
+    "a": "In Dubai, rent increases at renewal are linked to the RERA Rental Index for your area and need 90 days' written notice before the contract ends. You can check your area on the DLD Rental Index calculator.",
+    "source": "Checked on 25 Nov 2026 · Source: Dubai Land Department.",
+    "note": "This is education, not legal advice.",
+    "cta": "Ask Dalil",
+    "points": {
+      "language": "English and Arabic",
+      "source": "Official source and check date",
+      "neutral": "No property or agent recommendations"
+    }
+  },
+  "dates": {
+    "eyebrow": "Key dates",
+    "title": "Where the programme is going",
+    "mock": {
+      "title": "Mock platform ready",
+      "when": "25 Nov 2026"
+    },
+    "outlines": {
+      "title": "Video outlines",
+      "when": "27 Nov 2026"
+    },
+    "playbook": {
+      "title": "Playbook approval",
+      "when": "Dec 2026"
+    },
+    "pilot": {
+      "title": "Pilot launch in Dubai",
+      "when": "Q1 2027 (planned)"
+    },
+    "more": {
+      "title": "Abu Dhabi and Sharjah content",
+      "when": "As opportunities arise"
+    },
+    "done": "Done",
+    "next": "Next"
+  },
+  "partners": {
+    "eyebrow": "Partners",
+    "title": "Partners and sponsors",
+    "tile": "Sample sponsor (fictional)",
+    "tileNote": "Logo space for a programme sponsor",
+    "body": "Sponsors help keep Home Ready free. They never change our content, and we never share your details without your separate permission.",
+    "link": "Read our editorial policy"
+  },
+  "impact": {
+    "eyebrow": "Impact so far",
+    "title": "Small steps that add up",
+    "hint": "Pilot demo values",
+    "joined": "people joined",
+    "useful": "useful first steps",
+    "saves": "checklists and calculations saved",
+    "reminders": "reminders set"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions people ask",
+    "more": "See all questions",
+    "items": [
+      {
+        "q": "Is Home Ready free?",
+        "a": "Yes, completely free. Sponsors and partners fund it."
+      },
+      {
+        "q": "Do you recommend properties or agents?",
+        "a": "No. We teach you how to judge any home, agent or offer."
+      },
+      {
+        "q": "Which emirates do you cover?",
+        "a": "Dubai first; content always says which emirate it applies to. Abu Dhabi and Sharjah follow."
+      },
+      {
+        "q": "Is this legal or financial advice?",
+        "a": "No. It is education based on official sources, with the date we checked them. For your own case, speak to a qualified adviser."
+      },
+      {
+        "q": "Do you share my data with sponsors?",
+        "a": "Never without your separate yes for each request. Marketing emails are off unless you tick the box."
+      },
+      {
+        "q": "How long does a track take?",
+        "a": "About 45 to 50 minutes, in short pieces you can pause."
+      },
+      {
+        "q": "Can I use it in Arabic?",
+        "a": "Yes, switch language at the top of any page."
+      },
+      {
+        "q": "Do I get a certificate?",
+        "a": "Yes, finish a track and its quiz to get a Home Ready certificate from Potential.courses."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Your next home decision starts here.",
+    "button": "Join free",
+    "imageAlt": ""
+  },
+  "site": {
+    "about": "About Potential.org",
+    "faq": "FAQ",
+    "editorial": "Editorial policy",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "email": "hello@potential.org",
+    "programme": "Programme",
+    "help": "Help",
+    "follow": "Follow Potential.org",
+    "poweredBy": "Powered by",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "static": {
+    "eyebrow": "Home Ready · by Potential.org",
+    "updated": "Last updated 25 Nov 2026",
+    "email": "hello@potential.org",
+    "contactCta": "Contact the team",
+    "questionsTitle": "Questions about this page?",
+    "questionsBody": "Write to the Home Ready team. A person reads every message.",
+    "faq": {
+      "title": "Frequently asked questions",
+      "intro": "Short answers about cost, coverage, advice, your data and certificates.",
+      "moreTitle": "Still have a question?",
+      "moreBody": "Send it to the Home Ready team. We usually reply within two working days."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "intro": "The plain-language rules for using Home Ready, a free programme from Potential.org.",
+      "sections": {
+        "about": {
+          "title": "What Home Ready is",
+          "body": "Home Ready is a free education programme from Potential.org, the nonprofit arm of Potential.com. It helps people in the UAE make better decisions about renting or buying a home through short videos, readings, decision journeys, a calculator and checklists."
+        },
+        "advice": {
+          "title": "Education, not advice",
+          "body": "Home Ready is education, not legal, financial or mortgage advice. Fees and rules come from official sources with the date we checked them, but they can change. For your own case, speak to a qualified adviser before you sign or pay."
+        },
+        "accounts": {
+          "title": "Your account",
+          "body": "You must be 18 or older to join. Keep your password private and tell us at hello@potential.org if you think someone else has used your account. You can close your account at any time from your profile."
+        },
+        "use": {
+          "title": "Fair use",
+          "body": "Use Home Ready for your own learning. Do not copy content for resale, try to break the service, upload harmful material or share other people's personal details in Ask Dalil or any form."
+        },
+        "sponsors": {
+          "title": "Sponsors and offers",
+          "body": "Sponsors help keep Home Ready free. Every sponsored slot and offer carries a \"Sponsored\" label. Sponsors never change our content, and we only pass your details to a partner when you say yes to that specific request."
+        },
+        "content": {
+          "title": "Our content",
+          "body": "Videos, readings, journeys and checklists belong to Potential.org. You may save and print them for personal use. Results from the calculator and journeys are estimates based on the numbers you enter."
+        },
+        "changes": {
+          "title": "Changes to these terms",
+          "body": "We may update these terms as the programme grows. We will show the new date at the top of this page and tell registered learners by email about any important change."
+        },
+        "law": {
+          "title": "Governing law",
+          "body": "These terms are governed by the laws of the United Arab Emirates as applied in the Emirate of Dubai."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Privacy notice",
+      "intro": "What we collect, why we collect it and the choices you control.",
+      "sections": {
+        "collect": {
+          "title": "What we collect",
+          "body": "When you join: your name, email, password (stored encrypted), emirate, what brings you here, preferred language and, if you choose, a UAE mobile number and how you heard about us. While you learn: your progress, quiz scores, saved checklists, calculator results, reminders and questions to Dalil."
+        },
+        "use": {
+          "title": "How we use it",
+          "body": "To run your account, save your progress, send the reminders you set and improve the programme. Programme reports use totals only, never individual learners."
+        },
+        "marketing": {
+          "title": "Marketing emails",
+          "body": "Home Ready tips and new-content emails are off unless you tick the box at sign-up or turn them on in your profile. You can turn them off again with one click from any email."
+        },
+        "partners": {
+          "title": "Partners and sponsors",
+          "body": "We never share your details with a sponsor or partner unless you give a separate yes for that one request. Each request shows who will contact you and what they will receive. Sponsors only see aggregate figures."
+        },
+        "never": {
+          "title": "What we never ask for",
+          "body": "We do not collect Emirates ID numbers, passport numbers, bank account or card details. Dalil is designed to decline them if you type them."
+        },
+        "retention": {
+          "title": "How long we keep it",
+          "body": "We keep your account data while your account is open and delete it within 30 days after you close it, except records we must keep by law."
+        },
+        "rights": {
+          "title": "Your rights",
+          "body": "You can see, download, correct or delete your data from your profile, or ask us at hello@potential.org. We reply within 30 days."
+        }
+      }
+    },
+    "editorial": {
+      "title": "Editorial policy",
+      "intro": "How we keep Home Ready accurate, dated and independent of the sponsors who fund it.",
+      "sections": {
+        "independence": {
+          "title": "Independent of sponsors",
+          "body": "Sponsors help keep Home Ready free. They never write, edit or approve our lessons, journeys, calculator or Dalil answers, and they cannot pay to change a result or a ranking."
+        },
+        "sources": {
+          "title": "Every fee and rule is sourced and dated",
+          "body": "Each fee, percentage or rule names its official source, such as the Dubai Land Department, RERA or DEWA, and the date we last checked it. Market practice is labelled as market practice, not as a rule. Content always says which emirate it applies to."
+        },
+        "review": {
+          "title": "Reviewed before it goes live",
+          "body": "A qualified reviewer checks every lesson, journey step and Dalil answer against its source before it is published, in English and Arabic. Content is re-checked at least every six months or when a rule changes."
+        },
+        "labels": {
+          "title": "Clear labels",
+          "body": "Sponsored content and offers always carry a \"Sponsored\" label in the top corner of the slot. Sample and fictional content is labelled as such."
+        },
+        "recommendations": {
+          "title": "No recommendations",
+          "body": "We do not recommend specific properties, buildings, agents, banks or developers, sponsors included. We teach you how to judge any option yourself."
+        },
+        "corrections": {
+          "title": "Corrections",
+          "body": "Found something wrong or out of date? Write to hello@potential.org. We check every report, correct the content and update its check date."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact us",
+      "intro": "Questions about the programme, your account or a fee you think has changed? We are happy to help.",
+      "formTitle": "Send us a message",
+      "formIntro": "Fill in the form and the Home Ready team will reply by email.",
+      "name": "Full name",
+      "email": "Email",
+      "topic": "Topic",
+      "topicPlaceholder": "Choose a topic",
+      "topics": {
+        "question": "A question about renting or buying",
+        "content": "Report a fee or rule that has changed",
+        "account": "My account",
+        "privacy": "Privacy and my data",
+        "partner": "Partnerships and sponsorship"
+      },
+      "message": "Message",
+      "privacyNote": "Please do not include ID numbers or bank details.",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "sent": "Thanks {{name}}, your message is with the Home Ready team. We will reply by email.",
+      "errors": {
+        "name": "Enter your name (at least 2 characters).",
+        "email": "Enter a valid email address.",
+        "topic": "Choose a topic.",
+        "message": "Write a message of at least 10 characters."
+      },
+      "emailTitle": "Email us",
+      "hours": "We reply within two working days, Monday to Friday, Dubai time.",
+      "personTitle": "Talk to a person",
+      "personBody": "Asked Dalil and need more help? Use \"Talk to a person\" in Ask Dalil and your question goes straight to the Home Ready team.",
+      "adviceTitle": "Need advice on your own case?",
+      "adviceBody": "We cannot give legal, financial or mortgage advice. For a tenancy dispute in Dubai, the Rental Disputes Settlement Centre can help; for your own decision, speak to a qualified adviser."
+    }
+  }
+}

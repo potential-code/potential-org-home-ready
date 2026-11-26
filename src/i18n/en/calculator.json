@@ -1,0 +1,170 @@
+{
+  "pages": {
+    "title": "Home Ready calculator"
+  },
+  "aed": "AED {{value}}",
+  "banner": {
+    "eyebrow": "Plan with your own numbers",
+    "body": "Change any number and the results update straight away. Every default shows where it comes from and when we checked it.",
+    "note": "Educational estimate with your inputs, not financial or mortgage advice."
+  },
+  "tabs": {
+    "label": "Calculator type",
+    "true-cost": {
+      "title": "True cost of renting",
+      "body": "First-year cash out, not just the rent"
+    },
+    "rent-vs-buy": {
+      "title": "Rent vs buy",
+      "body": "Year-by-year totals and break-even"
+    },
+    "afford": {
+      "title": "What can I afford?",
+      "body": "A price range from income and savings"
+    }
+  },
+  "source": {
+    "prefix": "Source:",
+    "demo": "Your input (demo value)",
+    "checked": "checked on {{date}}"
+  },
+  "inputs": {
+    "title": "Your numbers",
+    "reset": "Reset defaults",
+    "range": "Enter a number from {{min}} to {{max}}."
+  },
+  "units": {
+    "aed": "AED",
+    "pct": "%",
+    "years": "years",
+    "count": "number"
+  },
+  "fields": {
+    "annualRent": "Annual rent",
+    "cheques": "Number of cheques",
+    "movingCost": "Moving cost",
+    "coolingMonthly": "District cooling a month",
+    "dewaMonthly": "DEWA bills a month",
+    "internetMonthly": "Internet a month",
+    "agentUsed": "I am using an agent",
+    "furnished": "Furnished home",
+    "coolingSeparate": "Cooling billed separately",
+    "villa": "Villa (higher DEWA deposit)",
+    "price": "Home price",
+    "downPaymentPct": "Down payment",
+    "ratePct": "Mortgage rate",
+    "termYears": "Loan term",
+    "rentNow": "Rent now, a year",
+    "rentGrowthPct": "Rent growth a year",
+    "serviceChargeYear": "Service charge a year",
+    "maintenancePct": "Maintenance a year (of value)",
+    "priceGrowthPct": "Price growth a year",
+    "transferFeePct": "DLD transfer fee",
+    "mortgageRegPct": "Mortgage registration fee",
+    "agencyFeePct": "Agency fee (buying)",
+    "sellingCostsPct": "Selling costs",
+    "monthlyIncome": "Monthly household income",
+    "monthlyDebts": "Monthly debt payments",
+    "savings": "Savings for the purchase",
+    "debtBurdenPct": "Debt-burden cap"
+  },
+  "trueCost": {
+    "firstYear": "First-year cash out",
+    "firstYearHint": "Rent plus one-off and running costs. Refundable deposits are not included.",
+    "monthly": "Monthly equivalent",
+    "monthlyHint": "First-year cash out divided by 12",
+    "breakdown": "What makes up the first year",
+    "rent": "Rent",
+    "agency": "Agency fee",
+    "ejari": "Ejari registration (online)",
+    "moving": "Moving",
+    "running": "Cooling, DEWA and internet (12 months)",
+    "housing": "Housing fee (5% of rent, via DEWA)",
+    "total": "First-year cash out",
+    "ejariNote": "Ejari is {{online}} online and {{trustee}} at a trustee centre.",
+    "refundable": "Refundable, paid up front",
+    "deposit": "Security deposit",
+    "dewaApartment": "DEWA move-in deposit (apartment)",
+    "dewaVilla": "DEWA move-in deposit (villa)",
+    "refundTotal": "Refundable total",
+    "upfront": "Cash needed on day one",
+    "refundableNote": "You get these back when you leave, so they sit outside the cost total. Day one includes the first cheque, fees, moving and the refundable deposits."
+  },
+  "rentBuy": {
+    "breakEven": "Break-even year",
+    "breakEvenHint": "First year buying costs less than renting, over a 15-year window",
+    "yearLong": "Year {{year}}",
+    "yearShort": "Y{{year}}",
+    "none": "Not within 15 years",
+    "rentTotal": "Rent paid over {{years}} years",
+    "buyTotal": "Net cost of buying over {{years}} years",
+    "monthlyPayment": "Mortgage payment {{amount}} a month",
+    "horizon": "How long you plan to stay",
+    "years": "{{n}} years",
+    "horizonHint": "Changes the totals, the chart and the table. The break-even year stays the same.",
+    "chartTitle": "Rent vs buy, cumulative cost by year",
+    "chartSubtitle": "Rent paid against the net cost of buying (payments, fees and running costs, minus your equity), AED",
+    "rentSeries": "Keep renting",
+    "buySeries": "Buy",
+    "breakEvenMark": "Break-even",
+    "colYear": "Year",
+    "colEquity": "Your equity"
+  },
+  "afford": {
+    "range": "Price range to look at",
+    "rangeValue": "{{from}} to {{to}}",
+    "limitedIncome": "Limited by your income and the debt-burden cap",
+    "limitedSavings": "Limited by your savings for the down payment and fees",
+    "maxMonthly": "Highest mortgage payment",
+    "maxMonthlyHint": "{{pct}}% of income minus your current debt payments",
+    "maxLoan": "Largest loan",
+    "maxLoanHint": "At this rate over {{years}} years",
+    "how": "How we got the range",
+    "byIncome": "Price your income supports",
+    "bySavings": "Price your savings support",
+    "maxPrice": "Highest price (the lower of the two)",
+    "note": "Banks cap all debt payments at {{pct}}% of income. Savings must cover the down payment, DLD transfer fee, agency fee and mortgage registration."
+  },
+  "save": {
+    "cta": "Save result",
+    "hint": "Saved results appear below so you can compare them.",
+    "title": "Save this result",
+    "name": "Name",
+    "nameError": "Give the result a name.",
+    "cancel": "Cancel",
+    "confirm": "Save",
+    "done": "Result saved",
+    "defaultName": {
+      "true-cost": "True cost of renting",
+      "rent-vs-buy": "Rent vs buy",
+      "afford": "What I can afford"
+    }
+  },
+  "sponsor": {
+    "aria": "Calculator partner",
+    "poweredBy": "Powered by",
+    "note": "The partner sees no personal data. Results stay in your account."
+  },
+  "saved": {
+    "title": "Saved results",
+    "compare": "Compare ({{n}} of 2)",
+    "compareTitle": "Side by side",
+    "closeCompare": "Close",
+    "pick": "Pick {{name}} to compare",
+    "delete": "Delete {{name}}",
+    "deleted": "Result deleted",
+    "emptyTitle": "No saved results yet",
+    "emptyBody": "Change the numbers above, then use Save result. Save two to compare them side by side."
+  },
+  "metrics": {
+    "firstYear": "First-year cash out",
+    "monthly": "Monthly equivalent",
+    "refundable": "Refundable",
+    "breakEven": "Break-even",
+    "rentTotal": "Rent total",
+    "buyTotal": "Buy, net total",
+    "rangeLow": "Range from",
+    "rangeHigh": "Range to",
+    "maxMonthly": "Highest monthly payment"
+  }
+}

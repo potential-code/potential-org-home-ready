@@ -1,0 +1,13 @@
+node_modules
+dist
+.checks
+*.local
+.playwright
+.tanstack
+
+# video tooling
+video/.venv
+__pycache__/
+*.pyc
+video/renders
+video/snapshots

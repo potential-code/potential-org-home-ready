@@ -1,0 +1,603 @@
+MKP-2026-002 Potential.org – Detailed Mockup Plan
+Programme: Home Ready (free UAE programme on renting and buying a home, Dubai content first). Requester: Shadi Banna. Prepared by Vera (AI Assistant, Potential.com), process owner SOP-MKP-01 v1.2, on 2026-11-25. Builder: Iris (supervised by Aliya). Sources: Shadi's request (12:50), Maya's brief (13:09), Shadi's answers (14:02), Maya's decisions (14:09), Mamoon's go-ahead to Maya (14:44) and Alex's High-Level Mockup Plan (14:55).
+Delivery due: 2026-11-25 22:20 Dubai time (7 hours from handoff). Everything below is final mockup content; demo data is fictional.
+C1. High-level summary (Alex's plan, Annex B)
+Programme. Home Ready is a free, self-paced programme for UAE renters, people deciding whether to buy, and first-time buyers. Potential.org runs it on a SMEEP-style platform with two interactive tracks and five short animated videos per track (2–4 minutes each); the mock uses titled placeholders. Languages: English and Arabic (RTL). Internal demo date: not set.
+Impact goal. Learners compare the real costs and risks of a housing decision and leave with a practical next step they can return to.
+KPI
+Target (proposed)
+How it is measured on the platform
+K1 Decision and next action
+2 of 2 demo journeys
+Each journey records completion and a saved next action.
+K2 Calculator and source checks
+1 of 1 calculator; 100% sourced claims
+Edit assumptions and confirm results change; every rule or fee shown has an official source and a "checked on" date.
+K3 First useful action
+50% of pilot sign-ups by day 14
+Unique users completing a journey or saving a checklist or calculator result within 14 days of sign-up.
+K4 Return and trust
+25% return by day 30; 0 unconsented shares
+Return sessions and reminder opt-ins; partner requests recorded only with a separate opt-in.
+Stakeholder (demo count)
+Actions (KPIs)
+Annex A modules
+Renters and first-time buyers (2 fictional profiles, EN/AR)
+Pick a track, run a scored decision journey, use the calculator, save a checklist, opt into a reminder, ask the AI assistant where to verify a rule (K1–K4).
+Learning Paths; Courses & Microlearning; Games; Badges; Resources & Knowledge Hub; AI Assistant / Concierge; Email and In-Platform Notifications.
+Maya (programme owner) and qualified reviewer (1 each)
+Review source dates and both language versions, approve content before release, monitor useful actions and returns (K2–K4).
+Content Localisation; Workflow & Approval Management; Programme Owner Dashboard.
+Leadership and sample sponsor (1 each)
+Leadership reviews aggregate results and opt-ins; the sample sponsor sees its labelled placements and aggregate performance only, never personal data (K4).
+Leadership Dashboard; Custom Reports; Partner / Entity Management; Role-Based Access & Permissions.
+Must show: (1) Rent: compare a fictional renewal with a move, open the DLD Rental Index, save a checklist and opt into a reminder. (2) Buy: compare a fictional ready home with continuing to rent; edit horizon, upfront and recurring costs; recalculate; save a due-diligence step; open DLD Title Deed Verification. (3) Switch EN/AR, show the dashboard and a labelled sponsor placement that neither blocks the journey nor captures data by default.
+Reference cases: SME Empowerment Programme (reusable learning, offers and owner reporting); INJAZ Al-Arab / HSBC – FLP (scenario-based financial learning with simulators).
+Changes Vera made and why: (a) Maya's brief adds a "true cost of renting" view and a "what can I afford" view; both are shown as tabs of the single Home Ready calculator so K2 stays "1 of 1 calculator". (b) Added a completion certificate per track (Maya's brief, section 5), issued by Potential.courses with Potential.org (Annex A.5). (c) Added two live Q&A events and a labelled offers area (Maya's brief, sections 5 and 6). (d) Sponsor names in the mock are fictional; Maya's target sponsors are not shown because none is confirmed.
+C2. Project settings
+Setting
+Value
+Platform name
+Home Ready (header: "Home Ready · by Potential.org")
+Mockup URL slug
+potentialorg-home-ready
+Languages
+English (default) and Arabic with full right-to-left layout; language switch in the header on every page. Arabic programme name for the mock: "جاهز للسكن" (Maya will confirm the final Arabic name with the Arabic content).
+Delivery deadline
+2026-11-25 22:20 Dubai time
+Demo date and presenter
+Not set; presenter Shadi Banna or Rawzaba Alhalabi
+Modules switched on
+Learning Paths; Courses & Microlearning; Assessments & Quizzes; Digital Certificates & Credentials; AI Assistant / Concierge; Games; Points; Badges; Milestones; Resources & Knowledge Hub; News & Announcements; Event Management; Event Registration; Registration & Onboarding; User Profiles; Role-Based Experiences; Partner / Entity Management; Email Notifications; In-Platform Notifications; Workflow & Approval Management; Programme Administration; Surveys (pre/post); Participant, Programme Owner and Leadership Dashboards; Custom Reports; Content Localisation; Role-Based Access & Permissions; Audit & Activity Records; Multilingual & RTL Experience; Mobile-Responsive Experience. Everything else hidden.
+C3. Branding
+Element
+Specification
+Logo
+Official Potential.org logo (white version for dark backgrounds): https://potential.org/brand/potential-org-white.2026-10-27.svg. Header left on the dark header band; footer left. Next to it the programme wordmark "Home Ready" in Inter Bold. No government or sponsor logos in the header.
+Primary
+#2E1A47 deep purple: header band, footer, headings on light backgrounds
+Secondary
+#7B4FD6 violet: links, progress bars, active tab underline, badges
+Accent
+#F2A541 warm amber: primary buttons (Register, Start, Save), score highlights
+Track colours
+Track A Renting #1F8A70 (green); Track B Buying #2F6FDE (blue): track cards, journey headers, chart series
+Background / surface
+#FAF8F5 page background; #FFFFFF cards; #ECE7F3 dividers
+Text
+#1F1B24 body; #6B6475 secondary text
+Sponsored label
+Background #FFF4D6, text #8A5A00, label text "Sponsored" / "مُموَّل"; always top-left of the slot
+Status
+Success #2E9E6A; warning #E07B26; error #C0392B
+Typography
+Inter (headings 700, body 400) from Google Fonts; Arabic: IBM Plex Sans Arabic (headings 600, body 400)
+Imagery
+Flat, warm illustrations of UAE homes: apartment towers, villas and townhouses, keys, boxes, a family at a door, a couple reviewing a document. Diverse residents. No real buildings, developer brands or real people's photos.
+Tone of voice
+Plain, warm, neutral and practical; second person ("you"); no hype; every fee or rule shows its source and a "checked on" date; "Education, not legal or financial advice" note on every lesson, journey result and calculator result.
+Footer
+"Powered by Potential.com" with the current wordmark: "potential" dark purple #2E1A47, ".com" violet #7B4FD6 (on the dark footer use white "potential" and #B79CF2 ".com" for contrast).
+C4. Sitemap
+Page
+URL path
+Landing page
+/
+Register (learner)
+/register
+Invited staff and partner sign-in (programme owner, reviewer, leadership, sponsor)
+/login (accounts created by the admin, no public sign-up)
+Login / forgot password
+/login, /forgot-password
+Onboarding (learner)
+/onboarding/1 to /onboarding/4
+Learner: Home
+/learn/home
+Learner: Tracks (Track A, Track B, lesson pages)
+/learn/tracks, /learn/tracks/renting, /learn/tracks/buying, /learn/tracks/<track>/<unit>
+Learner: Decision journeys
+/learn/journeys, /learn/journeys/renew-or-move, /learn/journeys/rent-or-buy
+Learner: Calculator
+/learn/calculator (tabs: true-cost, rent-vs-buy, afford)
+Learner: My checklists
+/learn/checklists, /learn/checklists/<id>
+Learner: My homes (shortlist)
+/learn/shortlist
+Learner: Reminders
+/learn/reminders
+Learner: Events and offers
+/learn/events, /learn/offers
+Learner: Ask Dalil (AI assistant)
+/learn/assistant (also floating button on every learner page)
+Learner: Achievements, Profile and privacy
+/learn/achievements, /learn/profile
+Programme owner (Maya)
+/admin/overview, /admin/learners, /admin/content, /admin/approvals, /admin/sponsors, /admin/communications, /admin/reports, /admin/settings
+Reviewer
+/review/queue, /review/item/<id>, /review/sources
+Leadership
+/leadership/impact, /leadership/funnel, /leadership/reports
+Sponsor
+/sponsor/placements, /sponsor/performance, /sponsor/guidelines
+Static
+/faq, /terms, /privacy, /contact, /editorial-policy
+C5. Landing page, section by section
+#
+Section
+Final content
+1
+Header and navigation
+Potential.org logo + "Home Ready". Menu: Tracks · Decision journeys · Calculator · Events · FAQ. Language switch EN | عربي. Buttons: Log in (outline), Join free (amber).
+2
+Hero
+Headline: "Rent or buy in the UAE, with your eyes open." Sub-headline: "Free short videos, scored decision journeys and a calculator that show what a home really costs and what to check before you sign." Primary button: "Join free" → /register. Secondary: "See how it works" → scrolls to section 6. Visual: illustration of a couple at a door holding keys, Dubai skyline behind. Small line under buttons: "Free · English and Arabic · Dubai rules first, more emirates soon".
+3
+About the programme
+"Home Ready is a free programme from Potential.org, the nonprofit arm of Potential.com. It helps people in the UAE make better decisions about renting or buying a home: what to check, what it really costs, what to ask, and when renting or buying makes more sense for you. We never recommend specific properties; we teach you how to judge them. Every fee and rule we show has an official source and the date we checked it. Home Ready is education, not legal, financial or mortgage advice."
+4
+Why it matters
+Headline: "Better housing decisions, one step at a time." Text: "Housing is the biggest monthly cost for most UAE residents. A clear checklist and a true-cost view before you sign can save thousands of dirhams and a lot of stress." Three numbers (pilot targets): "50% take a useful first step within 14 days" · "25% come back within 30 days" · "100% of rules and fees sourced and dated".
+5
+Who it is for
+Four cards, each with button "Start here" → /register?path=<x>: (1) "Moving to or within the UAE" – "Know your real budget and what to check at a viewing." (2) "Renewing your tenancy" – "Know your rights on renewal and rent increases." (3) "Renting and wondering about buying" – "See when buying makes sense for you." (4) "Buying your first home" – "Ready or off-plan: costs, risks and due diligence."
+6
+How it works
+Five steps with icons: 1 "Join free" (2-minute sign-up) → 2 "Pick your track" (Renting or Buying) → 3 "Watch and learn" (5 short videos per track) → 4 "Decide with confidence" (scored journey + calculator) → 5 "Save and come back" (checklists, reminders and a certificate).
+7
+Programme content
+Two track cards. Track A "Renting in the UAE" – 5 videos + readings, about 45 minutes, Beginner, green. Track B "Buying your first home" – 5 videos + readings, about 50 minutes, Beginner, blue. Each card lists its 5 unit titles (see C9) and a button "Preview track". Under Track A a labelled sample slot: "Sponsored · Track partner: Oasis Home Finance (fictional sample)".
+8
+AI experience
+Card for Dalil (see C10): "Meet Dalil, your Home Ready guide." Sample: Q "Can my landlord raise the rent at renewal in Dubai?" A "In Dubai, rent increases at renewal are linked to the RERA Rental Index for your area and need 90 days' written notice before the contract ends. You can check your area on the DLD Rental Index calculator. Checked on 25 Nov 2026 · Source: Dubai Land Department. This is education, not legal advice." Button "Ask Dalil" → /register.
+9
+Key dates
+Timeline: "Mock platform ready – 25 Nov 2026" · "Video outlines – 27 Nov 2026" · "Playbook approval – Dec 2026" · "Pilot launch in Dubai – Q1 2027 (planned)" · "Abu Dhabi and Sharjah content – as opportunities arise".
+10
+Partners
+Heading "Partners and sponsors". Two grey placeholder tiles labelled "Sample sponsor (fictional)" and a line: "Sponsors help keep Home Ready free. They never change our content, and we never share your details without your separate permission. Read our editorial policy." Link → /editorial-policy. No real company or authority logos.
+11
+Impact counters
+Animated demo values: 1,240 people joined · 672 useful first steps · 3,915 checklists and calculations saved · 412 reminders set.
+12
+FAQ
+8 Q&As: (1) "Is Home Ready free?" – "Yes, completely free. Sponsors and partners fund it." (2) "Do you recommend properties or agents?" – "No. We teach you how to judge any home, agent or offer." (3) "Which emirates do you cover?" – "Dubai first; content always says which emirate it applies to. Abu Dhabi and Sharjah follow." (4) "Is this legal or financial advice?" – "No. It is education based on official sources, with the date we checked them. For your own case, speak to a qualified adviser." (5) "Do you share my data with sponsors?" – "Never without your separate yes for each request. Marketing emails are off unless you tick the box." (6) "How long does a track take?" – "About 45–50 minutes, in short pieces you can pause." (7) "Can I use it in Arabic?" – "Yes, switch language at the top of any page." (8) "Do I get a certificate?" – "Yes, finish a track and its quiz to get a Home Ready certificate from Potential.courses."
+13
+Final call to action
+Headline: "Your next home decision starts here." Button "Join free".
+14
+Footer
+Potential.org logo; links: About Potential.org, FAQ, Editorial policy, Privacy, Terms, Contact (hello@potential.org); social icons LinkedIn, Instagram, YouTube; line "Home Ready is education, not legal, financial or mortgage advice."; "Powered by Potential.com" wordmark.
+C6. Registration and onboarding (per role)
+C6.1 Learner (public sign-up, /register)
+Field
+Type
+Required
+Options / validation
+Full name
+text
+Yes
+2–60 characters
+Email
+email
+Yes
+valid email; verification link
+Password
+password
+Yes
+8+ characters, 1 number
+Mobile (UAE)
+phone
+No
++971 format; only used for reminders if opted in
+Where do you live or plan to live?
+dropdown
+Yes
+Dubai; Abu Dhabi; Sharjah; Ajman; Ras Al Khaimah; Fujairah; Umm Al Quwain; Moving to the UAE
+What brings you here?
+dropdown
+Yes
+Moving and need to rent; Renewing my tenancy; Renting and thinking of buying; Buying my first home
+Preferred language
+radio
+Yes
+English; العربية
+How did you hear about us?
+dropdown
+No
+Social media; Search; Friend or family; Employer; Event; Partner offer; Other (source for the scorecard)
+I agree to the Terms and Privacy notice
+checkbox
+Yes
+unticked by default; links open in a panel
+Send me Home Ready tips and new content by email
+checkbox
+No
+UNTICKED by default (marketing opt-in)
+Eligibility: age 18+ (checkbox "I am 18 or older", required); open to anyone in or moving to the UAE. Approval: automatic after email verification. Consent: terms acceptance as above; marketing off by default; partner contact is never part of sign-up (asked separately per request, see C11).
+Onboarding after first login: Step 1 "Your situation" – household (Single, Couple, Family with children), monthly budget band (Under AED 5,000; 5,000–8,000; 8,000–12,000; 12,000–20,000; Over 20,000), work area (dropdown of Dubai areas). Step 2 "Pick your track" – Renting or Buying (track pre-selected from "What brings you here?"). Step 3 "Quick check" – 5-question pre-quiz of the chosen track (C9). Step 4 "Meet Dalil" – Dalil's greeting (C10) and the suggested first useful action ("Run the Renew-or-move journey" or "Try the rent-vs-buy calculator").
+Welcome email. Subject: "Welcome to Home Ready, {first name}". Body: "Hi {first name}, welcome to Home Ready, Potential.org's free programme on renting and buying a home in the UAE. Your first step takes about 10 minutes: {Run the Renew-or-move journey | Try the rent-vs-buy calculator}. You'll get a personal 'what to check' list you can save and come back to. Remember: Home Ready is education, not legal or financial advice. The Home Ready team, Potential.org".
+C6.2 Programme owner, reviewer, leadership and sponsor (invited)
+No public form. The programme owner creates the account (name, email, role, organisation for sponsors); the invitee receives "You're invited to Home Ready" with a set-password link, accepts Terms, and lands on their dashboard. Sponsor invitees also accept the Sponsor guidelines (editorial independence, labelling, no personal data). Approval: by the programme owner at invitation. Onboarding: one-screen tour of their dashboard tabs.
+C7. Roles and permissions
+Role
+View
+Create
+Edit
+Approve
+Export
+Learner
+Own tracks, journeys, calculator, checklists, reminders, offers, events
+Checklists, shortlist notes, calculator saves, reminders, partner requests (opt-in)
+Own profile and saves; withdraw consents
+—
+Own data (download my data)
+Programme owner (Maya)
+All learners (aggregate + profiles), content, sponsors, analytics
+Content drafts, events, offers, sponsor placements, announcements
+All content and settings
+Publish content after reviewer approval; sponsor placements
+All reports
+Qualified reviewer
+Review queue, content items, sources
+Review comments
+Source and "checked on" fields
+Content items (approve / request changes)
+Review log
+Leadership
+Aggregate KPIs, funnel, sponsor summary
+—
+—
+—
+Leadership reports (PDF/XLSX)
+Sample sponsor
+Own placements and aggregate performance (no personal data)
+—
+—
+—
+Own performance report (PDF)
+C8. Stakeholder dashboards and tabs
+C8.1 Learner – demo profile Aisha Rahman (renter, Dubai, couple, AED 8,000–12,000)
+Tab
+Components and demo data
+Actions
+Home
+Greeting "Good afternoon, Aisha". Next-action card: "Your tenancy in Al Barsha renews in 84 days. Run your renewal checklist." Track progress: Renting 3 of 5 units (60%). Journey result card: "Renew or move – score 78/100, saved 21 Nov". Saved items: 3 checklists, 2 calculator results. Reminder card: "Renewal reminder set for 1 Feb 2027". Badges strip: First Step, Budget Builder, Viewing Pro. Labelled sponsor card at the bottom: "Sponsored · Moving day offer from SwiftMove (fictional sample): 10% off packing" with "Not interested" link.
+Continue track; Open checklist; Open reminder; Ask Dalil; dismiss sponsor card
+Tracks
+Two track cards with progress (Renting 60%, Buying 0%); unit list with status ticks; each unit = video placeholder (title + duration) + reading + "Your action" button. "Checked on 25 Nov 2026" tag on every unit with fees or rules.
+Open unit; Mark complete; Take quiz; Download certificate (when earned)
+Decision journeys
+Two cards: "Renew or move?" (Track A, completed, 78/100) and "Keep renting or buy?" (Track B, not started). Journey player: profile panel, 5 decision screens, score meter, result page with personal "what to check" list (see C11.1).
+Start / Replay; Save next action; Save checklist; Set reminder
+Calculator
+Home Ready calculator with three tabs: True cost of renting, Rent vs buy, What can I afford (C11.2). Every default shows its source and "checked on" date; result banner "Educational estimate, not financial advice". Labelled "Powered by" slot: "Sponsored · Calculator partner: Oasis Home Finance (fictional sample)".
+Edit inputs; Recalculate; Save result; Compare saved results
+My checklists
+Saved: "Viewing checklist – 2BR, Al Barsha South" (14 of 18 ticked), "Renewal checklist" (5 of 9), "Move-out and deposit checklist" (0 of 10). Each item has a link to the related unit or official source.
+Tick items; Add note; Export PDF; Share link (private)
+My homes
+Shortlist of 3 homes Aisha entered herself: "2BR Al Barsha South – AED 95,000/yr, 4 cheques"; "2BR JVC – AED 82,000/yr, 2 cheques"; "1BR+study Sports City – AED 70,000/yr, 1 cheque"; side-by-side comparison with true yearly cost from the calculator and her notes.
+Add home; Compare; Run true cost
+Reminders
+Active: "Tenancy renewal – Al Barsha" on 1 Feb 2027 (90 days before contract end 2 May 2027), channel email + in-platform. Suggested: "Ejari renewal after you sign", "Move-out inspection".
+Set / edit / delete reminder; Choose channel
+Events & offers
+Events (C11.4); Offers area with 3 labelled offers (C11.3), each with "Request a call from this partner" that opens a separate consent dialog.
+Register for event; View offer; Request partner contact (opt-in)
+Ask Dalil
+Full-page chat (also floating button). Suggested prompt chips = the 5 sample prompts in C10.
+Ask; Open source link; Save answer to a checklist
+Achievements
+Points 340; badges earned 3 of 8 (C11.5); certificates: none yet (Track A certificate unlocks at 5 of 5 units + quiz 70%).
+View badge criteria; Download certificate
+Profile and privacy
+Personal details, language, emirate, situation; Consents: Terms (accepted 18 Nov), Marketing emails (off), Partner requests (1 given: SwiftMove, 22 Nov, withdrawable).
+Edit; Withdraw consent; Download my data; Delete account
+Second learner profile, Rohan Mehta (Track B buyer, Dubai, family with two children, AED 12,000–20,000): Home shows Buying 2 of 5 units, "Keep renting or buy?" journey completed 71/100, one saved rent-vs-buy result ("Buy ready 2BR in Dubai Hills (fictional) vs keep renting: buying costs less after year 6 at the defaults"), saved due-diligence checklist 3 of 12, reminder "Mortgage pre-approval expires 15 Jan 2027".
+New user state: empty cards with "Start your first step" and the two journey buttons; the demo shows the active state.
+C8.2 Programme owner – Maya (Potential.org)
+Tab
+Components and demo data
+Actions
+Overview
+KPI tiles K1–K4 (same values as C13) + sign-ups last 30 days (318); content status: 10 units published, 4 in review, 6 draft (Arabic); alerts: "2 fees expire their check date in 14 days".
+Open any tile; Go to approvals
+Learners
+Table of 1,240 learners: name, emirate, track, progress, first useful action (Y/N + date), last active, reminders, consents. Filters: track, emirate, source, activated, returned. Profile drawer with journey history.
+Filter; Open profile; Send targeted message; Export
+Content
+Tracks, units, videos (placeholders with title and duration), journeys, calculator defaults, checklists; each item shows language versions EN/AR, source, "checked on" date, status (Draft, In review, Approved, Published).
+Edit; Submit for review; Publish (approved only)
+Approvals
+Queue of items returned by the reviewer: "Unit A4 The contract – AR version: approved", "Calculator default: DLD transfer fee 4% – approved", "Unit B3 Ready or off-plan – changes requested: add escrow source".
+Publish; Return to author
+Sponsors & placements
+Inventory: track sponsor, video sponsor, calculator "powered by", offers area, event sponsor, partner requests. 3 fictional sample sponsors with status "Sample – not contracted". Each placement shows label preview and the rule "no personal data, label always visible".
+Add placement; Pause; Preview
+Communications
+Templates (C14), reminder schedule, announcement "New: Dubai rent increase rules explained".
+Edit template; Schedule announcement
+Reports
+Scorecard (Maya's brief section 8): sign-ups by source and track; first useful action rate; 30/90-day return; reminder opt-ins; track and video completion; offer use and consented partner requests; pipeline, agreements and money received (shown separately, all "0 – pre-launch"); marketing cost per activated user vs sponsor revenue per user (shown as "not yet available").
+Download XLSX/PDF
+Settings
+Languages, emirates enabled (Dubai on; Abu Dhabi and Sharjah "coming soon"), reviewer assignment, check-date expiry (90 days).
+Save
+C8.3 Qualified reviewer – Khalid Al Mansoori (fictional)
+Tab
+Components and demo data
+Actions
+Review queue
+4 items: Unit A4 "The contract" (EN, AR), Unit B3 "Ready or off-plan", calculator default "Mortgage registration fee 0.25% + AED 290 admin". Each with submitted date and due date.
+Open item
+Review item
+Side-by-side EN | AR text, list of claims with source link and "checked on" field, comment box.
+Approve; Request changes; Update check date
+Sources
+Register of official sources: Dubai Land Department (Rental Index, Ejari, Title Deed Verification), RERA, Dubai Law No. 26 of 2007 and No. 33 of 2008, Decree No. 43 of 2013, Central Bank of the UAE mortgage rules, Abu Dhabi Real Estate Centre, Sharjah Real Estate Registration Department; each with last-checked date.
+Add / update source
+C8.4 Leadership – Hessa Al Suwaidi (fictional)
+Single "Impact" view as specified in C13, plus "Funnel" (sign-up → onboarding → first useful action → return 30 days → reminder opt-in) and "Reports" tabs. Read-only.
+C8.5 Sample sponsor – Oasis Home Finance (fictional sample)
+Tab
+Components and demo data
+Actions
+My placements
+Track A partner badge; calculator "powered by" slot; one offer "Free mortgage pre-approval check". Each shows the label preview and live status.
+Preview
+Performance
+Aggregate only: impressions 18,420; calculator runs with placement visible 1,106; offer views 642; consented partner requests 37 (count only; no names, emails or phone numbers shown); banner "Personal data is never shared without the user's separate opt-in. Requests are passed by Potential.org."
+Download report (PDF)
+Guidelines
+Editorial independence, labelling, no influence on content or rankings.
+—
+C9. Learning content
+C9.1 Track A – Renting in the UAE (first course, built in full)
+Target role: learners. Level: Beginner. Duration: about 45 minutes. Description: "Know what renting really costs, what to check before you sign and your rights at renewal and move-out. Dubai rules first; each lesson says which emirate it applies to." Outcomes: (1) Calculate the true first-year cost of a rental. (2) Choose an area against your commute, schools and lifestyle. (3) Run a viewing with a checklist. (4) Understand registration, renewal notice and rent-increase rules in Dubai. (5) Protect your deposit at move-in and move-out.
+#
+Title
+Format
+Duration
+Summary
+A1
+Your real budget
+Video placeholder + reading + calculator action
+3 min video, 4 min reading
+Rent plus the one-off and running costs, and how cheques change the picture.
+A2
+Choosing the area
+Video placeholder + reading + interactive activity
+3 min video, 3 min activity
+Weigh commute, schools, services and lifestyle before price.
+A3
+The viewing
+Video placeholder + reading + checklist action
+3 min video, 4 min reading
+What to inspect and what to ask.
+A4
+The contract and renewal
+Video placeholder + reading + journey action
+4 min video, 5 min reading
+Ejari registration, notice periods, rent increases and your rights.
+A5
+Moving in and moving out
+Video placeholder + reading + quiz
+3 min video, 3 min reading, 5 min quiz
+Condition reports and getting your deposit back.
+Video placeholders (titled, with duration, 16:9 frame with play icon and "Video coming soon – animated explainer"): A1 "Your real budget" 3:00 · A2 "Choosing the area" 3:00 · A3 "The viewing" 3:00 · A4 "The contract and renewal" 4:00 · A5 "Moving in and moving out" 3:00. Every video page ends with "Your action" (open the checklist, run the calculator or journey).
+A1 reading – Your real budget (Dubai). The rent in an advert is only part of what you will pay in your first year. Before you commit, add up five things. First, the annual rent and how you will pay it: landlords often accept 1 to 4 cheques; fewer cheques can lower the rent but need more cash up front. Second, the security deposit, commonly about 5% of the annual rent for an unfurnished home and 10% for a furnished one; it is refundable if you leave the home in good condition. Third, the agency fee if an agent is involved, commonly around 5% of the annual rent. Fourth, registration and connection costs: the tenancy contract must be registered in Ejari, and you will open a DEWA account for electricity and water, which needs a refundable deposit. Fifth, running costs: DEWA bills, district cooling (chiller) charges in some buildings, internet, and the Dubai Municipality housing fee that appears on your DEWA bill. Put these into the true-cost calculator and compare homes on their full yearly cost, not on the advertised rent. Checked on 25 Nov 2026 · Sources: Dubai Land Department (Ejari), DEWA. Typical percentages are market practice, not fixed rules. Education, not legal or financial advice.
+A2 reading – Choosing the area. Start with the things you cannot change easily: where you work and, if you have children, where they will study. Measure the commute at the time you would really travel, by car and by metro if it is an option. Then list the services you use every week: supermarkets, clinics, gyms, mosques or places of worship, parks. Check parking: how many spaces come with the home and whether visitor parking exists. Think about noise and construction nearby; a quiet street today may be next to a building site next year. Finally, compare rents in two or three areas that meet your needs using the DLD Rental Index, so you know the typical range before you negotiate. Activity: drag your priorities (commute, schools, budget, lifestyle, space) into order; Home Ready saves them to your profile and uses them in the decision journey. Checked on 25 Nov 2026 · Source: Dubai Land Department Rental Index. Education, not advice.
+A3 reading – The viewing. Treat a viewing like an inspection. Open every tap and check water pressure and hot water. Run the air conditioning in every room and ask when it was last serviced. Look for damp, mould or stains on ceilings and around windows. Test windows, doors and locks. Check the kitchen appliances that are included and write them down. Ask who pays for maintenance and how quickly repairs are handled. Ask whether cooling is included or billed separately, and by whom. Ask how many cheques the landlord accepts and whether the rent changes with fewer cheques. Ask to see the title deed or proof that the person renting the home has the right to do so, and check the agent's RERA registration. Take photos and notes, and save them in your viewing checklist so you can compare homes later. Checked on 25 Nov 2026 · Source: RERA broker registry (Dubai Land Department). Education, not advice.
+A4 reading – The contract and renewal (Dubai). In Dubai the tenancy contract must be registered in Ejari; you need it for DEWA, residence matters and any dispute. Read the contract before you sign: the rent, payment dates, deposit, maintenance responsibilities and any additional terms. At renewal, either side that wants to change the terms, including the rent, must give the other written notice at least 90 days before the contract ends. Rent increases are linked to the RERA Rental Index: if your rent is already close to the average for similar homes in your area, the landlord cannot increase it, and the allowed increase rises in steps the further below the average your rent is. A landlord who wants the home back for personal use or sale must give 12 months' notice through a notary public or registered mail. If you disagree, the Rental Disputes Settlement Centre handles tenancy disputes. Before your renewal, run the Rental Index check and the Renew-or-move journey. Checked on 25 Nov 2026 · Sources: Dubai Law No. 26 of 2007 and No. 33 of 2008; Decree No. 43 of 2013; Dubai Land Department. Education, not legal advice.
+A5 reading – Moving in and moving out. On the day you get the keys, walk through the home with the landlord or agent and record its condition room by room, with dated photos and a signed condition report. Note anything that is broken or worn, even if it seems small. Keep copies of the contract, Ejari certificate, cheque receipts and any repair requests. When you plan to leave, give notice as your contract requires, arrange a final inspection, and compare the home with your move-in report. Normal wear and tear should not be deducted from your deposit; damage beyond that may be. Settle final DEWA and cooling bills and close the accounts to recover their deposits. Ask for your security deposit to be returned in writing with any deductions explained. Checked on 25 Nov 2026 · Source: Dubai Land Department. Education, not advice.
+Assessments. Pre-quiz: 5 questions (no pass mark, used for the pre/post comparison). Post-quiz: 10 questions, pass mark 70%. Sample questions (correct answer marked *):
+1. In Dubai, how much notice must be given before the contract ends to change the rent at renewal? a) 30 days b) 60 days c) 90 days* d) 12 months
+2. What links the maximum allowed rent increase in Dubai? a) The landlord's costs b) The RERA Rental Index for similar homes in the area* c) Inflation d) The agent's advice
+3. Which of these is usually refundable? a) Agency fee b) Security deposit* c) Ejari registration fee d) Monthly DEWA bills
+4. What is the best evidence to protect your deposit? a) A verbal agreement b) A dated, signed condition report with photos at move-in* c) The advert d) A text to the agent at move-out
+5. Why compare homes on true yearly cost? a) Adverts include all costs b) Deposits, fees, cooling and utilities can change which home is cheaper* c) It is required by law d) It reduces the rent
+6. Where must a Dubai tenancy contract be registered? a) Ejari* b) DEWA c) The bank d) The building management
+Certificate: complete all 5 units and score 70%+ on the post-quiz. Title "Home Ready – Renting in the UAE: Certificate of Completion", issued by Potential.courses with Potential.org, learner name, date, certificate ID, QR verification link.
+C9.2 Track B – Buying your first home (title, description, units)
+Beginner, about 50 minutes. "See when buying makes sense for you, what you can afford, the risks of ready and off-plan homes, and the checks before you pay." Units: B1 "Rent or buy?" (video 3:00 + journey action) · B2 "What you can afford" (video 4:00 + calculator action) · B3 "Ready or off-plan" (video 4:00 + reading) · B4 "Due diligence" (video 4:00 + checklist action, opens DLD Title Deed Verification) · B5 "The transaction and after" (video 3:00 + quiz). Post-quiz 10 questions, pass 70%; certificate "Home Ready – Buying your first home".
+C9.3 Pre/post survey
+Pre and post: "How confident are you about the real cost of renting or buying?" (1–5); "How confident are you about what to check before signing?" (1–5); post only: "What will you do next?" (free text, saved as next action). Demo result: confidence 2.4 → 4.1.
+C10. AI agent – Dalil
+Name: Dalil (Arabic "guide"). Persona: friendly, calm housing guide; avatar a rounded house-shaped icon with a key, in violet #7B4FD6 and amber #F2A541. Seen by learners (floating button bottom-right on all learner pages, and the Ask Dalil tab); programme owner sees a "Dalil questions" report (top topics, unanswered questions). Knowledge scope: Home Ready units, journeys, calculator, checklists, FAQ and the source register (C8.3). Answers in the user's language; always names the emirate, the official source and the check date; ends advice-like answers with "This is education, not legal or financial advice."
+Greeting: "Hi {first name}, I'm Dalil, your Home Ready guide. Ask me anything about renting or buying a home in the UAE, and I'll point you to the official source. What are you working on today?"
+Sample prompt
+Answer Dalil gives
+Can my landlord raise my rent at renewal?
+In Dubai, rent increases are linked to the RERA Rental Index for similar homes in your area, and any change to the terms needs written notice at least 90 days before your contract ends. Check your area on the DLD Rental Index calculator, then run the Renew-or-move journey. Source: Dubai Land Department; Decree No. 43 of 2013 · checked 25 Nov 2026. This is education, not legal advice.
+What will I pay up front for a AED 90,000 apartment?
+Typically: the first cheque (depends on 1–4 cheques), a security deposit of about 5% (AED 4,500) if unfurnished, an agency fee of about 5% (AED 4,500) if an agent is used, Ejari registration and a refundable DEWA deposit. Open the True cost tab of the calculator to see your full first-year figure. Typical percentages are market practice · checked 25 Nov 2026.
+Should I buy or keep renting?
+It depends on how long you'll stay, your down payment and the full costs of buying (transfer fee, mortgage costs, service charges). The Rent vs buy calculator shows the year when buying becomes cheaper at your numbers. I can't tell you what to do with your money, but I can walk you through the Keep-renting-or-buy journey. Shall we start?
+How do I check a property title in Dubai?
+Use Dubai Land Department's Title Deed Verification service with the title deed number, and check the developer and project in the DLD and RERA records. For off-plan, confirm the project has an escrow account. I've added "Verify title deed" to your due-diligence checklist. Source: Dubai Land Department · checked 25 Nov 2026.
+Which agent or building do you recommend?
+I don't recommend specific agents, buildings or developers; Home Ready stays independent. I can help you judge any option: check the agent's RERA registration, use the viewing checklist and compare homes on true yearly cost in My homes.
+Guardrails: no personalised legal, financial or mortgage advice; no property, agent, bank or developer recommendations (sponsors included); no collection of ID numbers or financial account details; declines off-topic requests politely; for disputes points to the Rental Disputes Settlement Centre and a qualified adviser; "Talk to a person" link sends the question to the Home Ready team (programme owner inbox).
+C11. Other modules
+C11.1 Decision journeys (Games)
+Journey 1 "Renew or move?" (Track A, profile Aisha: couple, AED 95,000 rent in Al Barsha, contract ends 2 May 2027, landlord asks AED 104,500). Five screens, each with 3 options and instant feedback: (1) "Your landlord's notice arrived 70 days before the end. What do you do?" best: "Check the 90-day notice rule and the Rental Index first" (+20). (2) "Run the Rental Index for your area" – result shows the allowed increase for the demo is 5% (AED 99,750), not 10% (+20 for using it). (3) "Compare with moving to a 2BR in JVC at AED 82,000" – shows true first-year cost incl. agency fee, deposit, moving: AED 93,850 vs renewing at AED 99,750 (+20 for comparing true cost). (4) "Commute and school check" (+10/+20 based on priorities from A2). (5) "Your decision" – any decision is valid; score reflects how well informed it was. Result: score 78/100, personal "what to check" list (5 items), buttons "Save next action", "Save checklist", "Set renewal reminder". Result note: "Educational scenario with fictional numbers."
+Journey 2 "Keep renting or buy?" (Track B, profile Rohan: family, rent AED 140,000/yr, savings AED 450,000, considering a ready 3BR townhouse at AED 2,300,000, fictional). Screens: (1) how long will you stay (3, 5, 8+ years); (2) down payment and fees (shows 20% minimum down payment for a first home under AED 5m for non-nationals as a default to check, 4% DLD transfer fee, mortgage registration 0.25% + admin fee, agency fee 2%); (3) running costs (service charge AED 14/sq ft/yr demo, maintenance, insurance); (4) due diligence (title deed verification, developer and service-charge history); (5) decision. Result 71/100, break-even year from the calculator, saved due-diligence step "Verify title deed", link to DLD Title Deed Verification.
+C11.2 Home Ready calculator (one calculator, three tabs)
+Tab "True cost of renting": inputs annual rent (AED 95,000), cheques (4), furnished (no), agent used (yes), cooling billed separately (yes, AED 450/month), DEWA (AED 600/month), internet (AED 389/month), moving cost (AED 3,000). Defaults: deposit 5% unfurnished / 10% furnished (market practice), agency fee 5% (market practice), Ejari fee and DEWA deposit as flat demo values flagged "check with source". Output: first-year cash out, monthly equivalent, and refundable part. Formula: rent + agency fee + Ejari + moving + 12 × (cooling + DEWA + internet) + housing fee (5% of annual rent, paid via DEWA); refundable = security deposit + DEWA deposit.
+Tab "Rent vs buy": inputs property price (AED 2,300,000), down payment % (20), mortgage rate (4.49% demo), term (25 years), horizon (years, slider 1–15, default 8), annual rent now (AED 140,000) and rent growth % (3), service charge per year (AED 30,800), maintenance % of price (0.5), price growth % (2), transfer fee % (4), mortgage registration % (0.25), agency fee % (2), selling costs % (2). Output: cumulative cost of renting vs net cost of buying (payments + costs − equity at end), line chart by year, break-even year (demo: year 6), table by year. Every default has a source tag and "checked on 25 Nov 2026"; all inputs editable; Recalculate updates the chart instantly (K2).
+Tab "What can I afford": inputs monthly income, monthly debts, savings; output maximum price range using the down-payment default and a debt-burden cap of 50% of income (UAE Central Bank rule, shown as "check with your bank"). Banner on every tab: "Educational estimate with your inputs, not financial or mortgage advice."
+C11.3 Offers area and partner requests (labelled)
+Three fictional sample offers, each with the "Sponsored" label: "SwiftMove – 10% off packing and moving" (movers); "Oasis Home Finance – free mortgage pre-approval check" (bank); "SafeNest – first month free on contents insurance" (insurer). Button "Request a call from this partner" opens a separate consent dialog: "Share my name, email and phone with {partner} for this request only" – checkbox unticked, confirm button; withdrawable in Profile. Without the tick nothing is shared and the user can still use the offer page.
+C11.4 Events
+Event
+Date (demo)
+Format
+Speaker
+Status
+Live Q&A: Renewing your tenancy in Dubai
+10 Dec 2026, 19:00
+Online webinar, EN
+Home Ready tenancy expert (fictional: Sara Haddad)
+Aisha registered
+Live Q&A: Buying your first home – ready or off-plan?
+17 Dec 2026, 19:00
+Online webinar, EN/AR
+Fictional: Omar Al Nuaimi, property finance educator
+Open · "Sponsored · Event partner: Oasis Home Finance (fictional sample)"
+Moving season clinic: true cost workshop
+14 Jan 2027, 18:30
+Online, AR
+Home Ready team
+Open
+C11.5 Gamification
+Points: unit complete 20; journey complete 50; checklist saved 20; calculator result saved 20; reminder set 30; event attended 40. Badges (8): First Step (first useful action), Budget Builder (true-cost result saved), Viewing Pro (viewing checklist 80%+), Contract Ready (unit A4 + renewal checklist), Decision Maker (any journey 70+), Smart Buyer (rent-vs-buy saved), Due Diligence (due-diligence checklist 80%+), Home Ready Graduate (one track certificate). Milestones per track at 20/60/100%. No public leaderboard (privacy).
+C11.6 Checklists (saved to account)
+Viewing checklist (18 items), Renewal checklist (9), Move-in condition checklist (12), Move-out and deposit checklist (10), Buying due-diligence checklist (12: verify title deed on DLD; check developer registration; confirm escrow for off-plan; read service-charge history; get mortgage pre-approval; snagging inspection at handover; and others). Each item links to the unit or official source.
+C12. Admin and programme owner view
+As C8.2 (Overview, Learners, Content, Approvals, Sponsors & placements, Communications, Reports, Settings). Interventions: in Learners, a saved filter "Signed up 7+ days ago, no useful action" (214 demo learners) with button "Send nudge" (template C14). Audit log of publish and consent events in Settings.
+C13. Leadership and impact view
+KPI tile
+Definition and formula
+Target
+Demo value
+Trend
+K1 Decision and next action
+Journeys in the mock that record completion + a saved next action ÷ journeys built
+2 of 2
+2 of 2 (pilot: 486 journeys completed, 412 with a saved next action = 85%)
+↑
+K2 Calculator and source checks
+Working calculators ÷ 1; sourced and dated claims ÷ all claims shown
+1 of 1; 100%
+1 of 1; 100% (64 of 64 claims sourced and dated)
+→
+K3 First useful action
+Unique sign-ups completing a journey or saving a checklist or calculator result within 14 days ÷ sign-ups at least 14 days old
+50% by day 14
+54% (672 of 1,240)
+↑
+K4 Return and trust
+Sign-ups with a return session within 30 days ÷ sign-ups at least 30 days old; unconsented partner shares
+25%; 0
+27% (251 of 922); 0 unconsented shares; 412 reminder opt-ins; 37 consented partner requests
+↑
+Charts: sign-ups over time (weekly, last 12 weeks, by source); funnel (1,240 joined → 1,105 onboarded → 672 first useful action → 251 returned within 30 days → 412 reminder opt-ins); track and video completion (Track A 38% complete, Track B 24%); pre vs post confidence (2.4 → 4.1); journey score distribution; sponsor summary (impressions, offer views, consented requests – aggregate). Impact story panel: "In the pilot so far, 54% of people who joined took a useful step within 14 days, and 27% came back within 30 days. Learners' confidence about the real cost of a home rose from 2.4 to 4.1 out of 5." Filters: date range, track, emirate, source, household type, language. Reports: "Home Ready scorecard" (XLSX), "Leadership summary" (PDF), "Sponsor aggregate report" (PDF).
+C14. Notifications and emails
+Trigger
+Channel
+Subject
+Body
+Registration
+Email
+Welcome to Home Ready, {first name}
+As C6.1 welcome email.
+No useful action after 7 days
+Email + in-platform
+Your 10-minute first step is waiting
+Hi {first name}, run the {journey} and get your personal "what to check" list. It takes about 10 minutes.
+Renewal reminder (90 days before contract end, opt-in)
+Email + in-platform
+Your tenancy renews in 90 days: what to check
+Hi {first name}, your contract for {home} ends on {date}. Any change to the rent needs 90 days' notice in Dubai. Check the Rental Index and open your renewal checklist.
+Certificate issued
+Email
+You're Home Ready: your certificate
+Congratulations {first name}, you completed {track}. Download your certificate from Potential.courses.
+Event reminder (24 h before)
+Email + in-platform
+Tomorrow: {event}
+Hi {first name}, {event} starts tomorrow at {time}. Join link: {link}.
+Content approved (staff)
+In-platform
+Approved: {item}
+{reviewer} approved {item} ({language}). Ready to publish.
+Partner request confirmed (opt-in)
+Email
+We've passed your request to {partner}
+You asked {partner} to contact you about {offer}. We shared only your name, email and phone, for this request. Withdraw any time in Profile.
+C15. Demo data
+Learners: 1,240 (pilot demo). Track: Renting 58%, Buying 42%. Emirate: Dubai 81%, Sharjah 9%, Abu Dhabi 7%, other 3%. Language: English 66%, Arabic 34%. Source: social 41%, search 23%, employer 14%, friend 12%, partner offer 6%, event 4%.
+Status: first useful action 672 (54%); returned within 30 days 251 of 922 eligible (27%); reminders 412; journeys completed 486; checklists saved 2,310; calculator results saved 1,605 (3,915 saves in total); certificates 214 (Track A 152, Track B 62); consented partner requests 37; unconsented shares 0.
+Names (fictional, UAE mix): Aisha Rahman, Rohan Mehta, Fatima Al Hashimi, Daniel Okafor, Mariam Saeed, Arjun Nair, Layla Haddad, Yousef Al Marzouqi, Grace Thompson, Omar Khalil, Priya Menon, Hamad Al Ketbi.
+Staff and partners (fictional): Maya (programme owner, Potential.org), Khalid Al Mansoori (qualified reviewer), Hessa Al Suwaidi (leadership), Oasis Home Finance / SwiftMove / SafeNest (fictional sample sponsors).
+Consistency: completions never exceed starts; K-values in C8.2, C13 and landing counters match.
+C16. Demo accounts, click-path and executive video storyline
+Role
+Display name
+Username
+What to show
+Learner (renter)
+Aisha Rahman
+aisha.renter
+Home, Track A unit A4, Renew-or-move journey (78/100), true cost tab, checklist, renewal reminder, Dalil, offers consent
+Learner (buyer)
+Rohan Mehta
+rohan.buyer
+Rent-vs-buy tab (edit horizon, recalculate), Keep-renting-or-buy result, due-diligence step and DLD link
+Programme owner
+Maya
+maya.owner
+Overview, Content with EN/AR and check dates, Approvals, Sponsors & placements, Reports scorecard
+Qualified reviewer
+Khalid Al Mansoori
+khalid.reviewer
+Review queue, approve an item
+Leadership
+Hessa Al Suwaidi
+hessa.leadership
+Impact view K1–K4, funnel, impact story
+Sample sponsor
+Oasis Home Finance (fictional)
+oasis.sponsor
+Placements and aggregate performance, no personal data
+Iris sets the passwords and returns them in the delivery email (role, username, password, what to show).
+Click-path (about 10 minutes): 1) Landing page: hero, two tracks, Dalil card, labelled partner tile; switch to Arabic and back. 2) Join free: show the form with marketing unticked, then log in as aisha.renter. 3) Aisha Home: next action "renews in 84 days". 4) Track A, unit A4: video placeholder, reading with source and check date. 5) Renew-or-move journey: Rental Index step, true-cost comparison, result 78/100, save checklist, set reminder. 6) Ask Dalil "Can my landlord raise my rent at renewal?". 7) Offers: open the sponsored offer and the separate consent dialog (do not tick). 8) Log in as rohan.buyer: rent-vs-buy calculator, change horizon 8 → 4 years, recalculate (break-even moves), save; open the due-diligence step and DLD Title Deed Verification link. 9) maya.owner: Content (EN/AR, check dates), Approvals, Sponsors & placements, Reports. 10) oasis.sponsor: aggregate performance only. 11) Finish on hessa.leadership Impact view (K1–K4, funnel, impact story).
+#
+Video moment (in order)
+Outcome caption
+1
+Branded landing page hero (EN), quick flip to Arabic
+"A free UAE programme for better home decisions"
+2
+Aisha's Home with the renewal next-action card
+"Every learner gets a clear next step"
+3
+Renew-or-move journey: Rental Index step → result 78/100 and saved checklist
+"Decisions made with official sources, not guesswork"
+4
+Rohan's rent-vs-buy calculator: edit horizon, chart recalculates
+"See the real cost of renting versus buying"
+5
+Labelled sponsor offer and the separate consent dialog
+"Sponsors fund it; users stay in control of their data"
+6
+Maya's Content and Approvals with EN/AR and check dates
+"Every fact reviewed, dated and bilingual"
+7
+Leadership Impact view K1–K4 and funnel
+"Track first useful actions and returning users"
+Closing frame: "Home Ready – by Potential.org" with the Potential.org logo and "Powered by Potential.com". Spec (SOP 8.3): 55–65 seconds, MP4 H.264 1080p 16:9, file MKP-2026-002_Potential.org_Executive-Video.mp4, light background music, no voice-over, demo data only.
+C17. Assumptions, needs scoping and acceptance checklist
+Assumptions:
+Internal Potential.org programme; no prospect logo beyond Potential.org; no CRM opportunity.
+Potential.org colours could not be read automatically from potential.org (its stylesheet was not reachable from Vera's environment); the palette in C3 uses the Potential deep purple and violet with a warm accent. If potential.org's live header colours differ, Iris matches the live site for primary and secondary and keeps the rest.
+Fees, percentages and rules in content and calculator defaults are shown with source and "checked on 25 Nov 2026" for the mock only; nothing is published until a qualified UAE reviewer checks it (Maya will propose the reviewer in the playbook). Typical market percentages (deposit, agency fee) are labelled as practice, not rules.
+Videos are titled placeholders; Iris produces the 10 animated videos later from Maya's outlines due 27 Nov (style: animated explainer, on-screen checklists, no presenter, EN with AR version, source and check date on screen, ends with a platform action).
+Pilot targets and demo counts are proposed (Alex's plan); Maya owns the playbook, targets and sponsor approach (Mamoon 14:44).
+All sponsors, offers, people and homes in the mock are fictional; target sponsors and authorities are not shown until confirmed.
+Arabic programme name "جاهز للسكن" is a mock placeholder until Maya confirms it with the Arabic content.
+Needs scoping (shown as working demo features in the mock): custom calculation engine and its maintained defaults; checklist persistence and PDF export; SMS reminders; live links/integrations with DLD services (the mock opens the public DLD pages only); partner-request hand-off to sponsors; reuse of the SMEEP Operator tools; UAE data protection review of consent texts.
+Acceptance checklist (Vera, Stage 5):
+Branding matches C3: Potential.org logo, hex colours, Inter / IBM Plex Sans Arabic, "Powered by Potential.com" footer wordmark.
+All 14 landing sections in C5 present with the specified copy, EN and AR.
+Learner registration works with marketing unticked by default, 18+ check, onboarding 4 steps; invited roles sign in.
+Every learner, owner, reviewer, leadership and sponsor tab in C8 is present, populated and clickable.
+Track A fully built (5 units, readings, video placeholders, pre/post quiz, certificate); Track B units listed.
+Both decision journeys run end to end with score, saved next action and checklist; reminder can be set.
+Calculator: three tabs; editing inputs changes results; every default shows source and check date.
+Sponsor slots labelled "Sponsored"; partner requests need a separate unticked opt-in; sponsor view shows aggregates only.
+Dalil answers the 5 sample prompts in character with source, date and the education note.
+Every KPI K1–K4 in C13 shown with its demo value; funnel and impact story present.
+All 6 demo accounts log in and the click-path runs end to end.
+Mobile width (375 px) and Arabic RTL display correctly.
+The 1-minute executive video follows the C16 storyline and meets SOP 8.3 (55–65 s, 1080p MP4, captions, closing frame, demo data only).

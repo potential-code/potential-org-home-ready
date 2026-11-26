@@ -1,0 +1,156 @@
+import type { Source } from '@shared/types'
+import { L } from './l'
+
+/** Official source register (brief C8.3). Every dated claim points to one of these ids. */
+export const CHECKED_ON = '2026-11-25'
+
+const s = (
+  id: string,
+  en: string,
+  ar: string,
+  orgEn: string,
+  orgAr: string,
+  url: string,
+  emEn = 'Dubai',
+  emAr = 'دبي',
+): Source => ({
+  id,
+  name: L(en, ar),
+  org: L(orgEn, orgAr),
+  url,
+  emirate: L(emEn, emAr),
+  checkedOn: CHECKED_ON,
+})
+
+export const SOURCES: Source[] = [
+  s(
+    'dld-ejari',
+    'Ejari: register or renew a tenancy contract',
+    'إيجاري: تسجيل أو تجديد عقد الإيجار',
+    'Dubai Land Department',
+    'دائرة الأراضي والأملاك في دبي',
+    'https://dubailand.gov.ae/en/eservices/register-renew-tenancy-contract/',
+  ),
+  s(
+    'dld-rental-index',
+    'Rental Index (rent increase calculator)',
+    'مؤشر الإيجارات (حاسبة زيادة الإيجار)',
+    'Dubai Land Department',
+    'دائرة الأراضي والأملاك في دبي',
+    'https://dubailand.gov.ae/en/eservices/rental-index/',
+  ),
+  s(
+    'dld-title-deed',
+    'Title Deed Verification',
+    'التحقق من سند الملكية',
+    'Dubai Land Department',
+    'دائرة الأراضي والأملاك في دبي',
+    'https://dubailand.gov.ae/en/eservices/title-deed-verification/',
+  ),
+  s(
+    'dld-fees',
+    'Property transfer and mortgage registration fees',
+    'رسوم نقل الملكية وتسجيل الرهن',
+    'Dubai Land Department',
+    'دائرة الأراضي والأملاك في دبي',
+    'https://dubailand.gov.ae/en/eservices/',
+  ),
+  s(
+    'rera-brokers',
+    'RERA broker registry',
+    'سجل الوسطاء العقاريين (ريرا)',
+    'Real Estate Regulatory Agency (RERA)',
+    'مؤسسة التنظيم العقاري (ريرا)',
+    'https://dubailand.gov.ae/en/eservices/broker-search/',
+  ),
+  s(
+    'dewa-move-in',
+    'Activation of electricity and water (move-in)',
+    'تفعيل الكهرباء والمياه (الانتقال)',
+    'Dubai Electricity and Water Authority (DEWA)',
+    'هيئة كهرباء ومياه دبي (ديوا)',
+    'https://dewa.gov.ae/en/consumer/supply-management/activation-of-electricity-water-move-in',
+  ),
+  s(
+    'dm-housing-fee',
+    'Dubai Municipality housing fee (on the DEWA bill)',
+    'رسوم السكن لبلدية دبي (على فاتورة ديوا)',
+    'Dubai Municipality',
+    'بلدية دبي',
+    'https://www.dm.gov.ae/',
+  ),
+  s(
+    'law-26-2007',
+    'Dubai Law No. 26 of 2007 (landlord and tenant relations)',
+    'قانون دبي رقم 26 لسنة 2007 (تنظيم العلاقة بين المؤجرين والمستأجرين)',
+    'Government of Dubai',
+    'حكومة دبي',
+    'https://dlp.dubai.gov.ae/',
+  ),
+  s(
+    'law-33-2008',
+    'Dubai Law No. 33 of 2008 (amending Law No. 26 of 2007)',
+    'قانون دبي رقم 33 لسنة 2008 (تعديل القانون رقم 26 لسنة 2007)',
+    'Government of Dubai',
+    'حكومة دبي',
+    'https://dlp.dubai.gov.ae/',
+  ),
+  s(
+    'decree-43-2013',
+    'Decree No. 43 of 2013 (rent increases in Dubai)',
+    'المرسوم رقم 43 لسنة 2013 (زيادة بدل إيجار العقارات في دبي)',
+    'Government of Dubai',
+    'حكومة دبي',
+    'https://dlp.dubai.gov.ae/',
+  ),
+  s(
+    'rdsc',
+    'Rental Disputes Settlement Centre',
+    'مركز فض المنازعات الإيجارية',
+    'Dubai Land Department',
+    'دائرة الأراضي والأملاك في دبي',
+    'https://rdc.gov.ae/',
+  ),
+  s(
+    'cbuae-mortgage',
+    'Mortgage loan regulations (loan-to-value, debt burden)',
+    'أنظمة القروض العقارية (نسبة القرض إلى القيمة وعبء الدين)',
+    'Central Bank of the UAE',
+    'مصرف الإمارات العربية المتحدة المركزي',
+    'https://www.centralbank.ae/en/',
+    'UAE',
+    'الإمارات',
+  ),
+  s(
+    'adrec',
+    'Abu Dhabi Real Estate Centre',
+    'مركز أبوظبي العقاري',
+    'Abu Dhabi Real Estate Centre',
+    'مركز أبوظبي العقاري',
+    'https://www.adrec.gov.ae/',
+    'Abu Dhabi',
+    'أبوظبي',
+  ),
+  s(
+    'sharjah-rerd',
+    'Sharjah Real Estate Registration Department',
+    'دائرة التسجيل العقاري بالشارقة',
+    'Government of Sharjah',
+    'حكومة الشارقة',
+    'https://www.shjrerd.gov.ae/',
+    'Sharjah',
+    'الشارقة',
+  ),
+  s(
+    'market-practice',
+    'Market practice (typical percentages, not fixed rules)',
+    'ممارسات السوق (نسب شائعة وليست قواعد ثابتة)',
+    'Home Ready team',
+    'فريق جاهز للسكن',
+    'https://dubailand.gov.ae/en/',
+  ),
+]
+
+export const SOURCE_BY_ID: Record<string, Source> = Object.fromEntries(
+  SOURCES.map((x) => [x.id, x]),
+)

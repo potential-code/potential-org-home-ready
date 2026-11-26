@@ -1,0 +1,263 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+@import "@fontsource/ibm-plex-sans-arabic/400.css";
+@import "@fontsource/ibm-plex-sans-arabic/600.css";
+@import "./tokens.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Semantic layer: components use these names, never raw hex. */
+:root {
+  --radius: 1rem;
+  --ink: var(--brand-ink);
+  --ink-soft: var(--brand-grey);
+  --background: var(--tone-background);
+  --surface: var(--brand-white);
+  --foreground: var(--ink);
+  --card: var(--brand-white);
+  --card-foreground: var(--ink);
+  --popover: var(--brand-white);
+  --popover-foreground: var(--ink);
+  --primary: var(--brand-primary);
+  --primary-foreground: var(--brand-white);
+  --secondary: var(--brand-tint-100);
+  --secondary-foreground: var(--brand-deep);
+  --muted: var(--brand-tint-50);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--brand-tint-100);
+  --accent-foreground: var(--ink);
+  --destructive: var(--tone-danger);
+  --border: var(--tone-border);
+  --input: var(--tone-input);
+  --ring: var(--brand-primary);
+
+  --success: var(--tone-success);
+  --success-soft: var(--tone-success-soft);
+  --info: var(--brand-primary);
+  --info-soft: var(--brand-primary-50);
+  --notice: var(--tone-notice);
+  --notice-soft: var(--tone-notice-soft);
+  --danger: var(--tone-danger);
+  --danger-soft: var(--tone-danger-soft);
+
+  /* Elevation: cards always lift off the page (tinted with the deep brand colour, never pure black). */
+  --shadow-xs: 0 1px 2px rgb(var(--shadow-rgb) / 0.06);
+  --shadow-sm:
+    0 1px 2px rgb(var(--shadow-rgb) / 0.05), 0 4px 14px -2px rgb(var(--shadow-rgb) / 0.12);
+  --shadow-md:
+    0 2px 4px rgb(var(--shadow-rgb) / 0.06), 0 12px 32px -6px rgb(var(--shadow-rgb) / 0.18);
+  --shadow-lg:
+    0 4px 10px rgb(var(--shadow-rgb) / 0.08), 0 24px 56px -10px rgb(var(--shadow-rgb) / 0.26);
+  --shadow-pop:
+    0 10px 20px rgb(var(--shadow-rgb) / 0.12), 0 34px 80px -12px rgb(var(--shadow-rgb) / 0.32);
+}
+
+@theme inline {
+  --font-sans: var(--font-family);
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 6px);
+  --radius-lg: calc(var(--radius) - 4px);
+  --radius-xl: var(--radius);
+  --radius-2xl: calc(var(--radius) + 6px);
+  --radius-3xl: calc(var(--radius) + 14px);
+
+  /* Brand colour utilities: bg-brand, text-brand-deep, bg-brand-accent, bg-tint-100, ... */
+  --color-brand: var(--brand-primary);
+  --color-brand-50: var(--brand-primary-50);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-accent-600: var(--brand-accent-600);
+  --color-brand-highlight: var(--brand-highlight);
+  --color-brand-warm: var(--brand-warm);
+  --color-brand-red: var(--brand-red);
+  --color-tint-50: var(--brand-tint-50);
+  --color-tint-100: var(--brand-tint-100);
+  --color-tint-200: var(--brand-tint-200);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-surface: var(--surface);
+  --color-track-a: var(--brand-track-a);
+  --color-track-a-ink: var(--brand-track-a-ink);
+  --color-track-a-soft: var(--brand-track-a-soft);
+  --color-track-b: var(--brand-track-b);
+  --color-track-b-ink: var(--brand-track-b-ink);
+  --color-track-b-soft: var(--brand-track-b-soft);
+  --color-sponsor-soft: var(--brand-sponsor-soft);
+  --color-sponsor-ink: var(--brand-sponsor-ink);
+  --color-brand-pop: var(--brand-pop);
+
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-pop: var(--shadow-pop);
+
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-notice: var(--notice);
+  --color-notice-soft: var(--notice-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold text-ink;
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  html[lang="ar"] h1,
+  html[lang="ar"] h2,
+  html[lang="ar"] h3 {
+    letter-spacing: 0;
+    line-height: 1.35;
+  }
+  :focus-visible {
+    outline: 3px solid var(--brand-primary);
+    outline-offset: 2px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--brand-highlight);
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  /* Signature gradients (accent → primary → deep). */
+  .bg-grad-brand {
+    background-image: linear-gradient(
+      135deg,
+      var(--brand-grad-start) 0%,
+      var(--brand-primary) 55%,
+      var(--brand-deep) 100%
+    );
+  }
+  .bg-grad-soft {
+    background-image: linear-gradient(180deg, var(--brand-tint-100) 0%, var(--brand-white) 100%);
+  }
+  .bg-grad-warm {
+    background-image: linear-gradient(135deg, var(--brand-highlight) 0%, var(--brand-warm) 100%);
+  }
+  .text-grad-brand {
+    background-image: linear-gradient(90deg, var(--brand-grad-start), var(--brand-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  /* Standard surface card: white, soft border, real elevation. */
+  .card {
+    @apply rounded-2xl border border-border/70 bg-white shadow-md;
+  }
+  .card-hover {
+    /* Tailwind v4 moves elements with the `translate` property, so it must be in the transition list. */
+    @apply transition-[translate,transform,box-shadow,border-color,background-color] duration-300 ease-out will-change-transform hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0;
+  }
+  /* Vertical brand gradient for the sidebar and auth panel. */
+  .bg-grad-brand-v {
+    background-image: linear-gradient(
+      180deg,
+      var(--brand-primary) 0%,
+      var(--brand-deep) 60%,
+      var(--brand-deep-900) 100%
+    );
+  }
+  /* Photo scrim for split auth panels and image banners (keeps white text readable). */
+  .bg-scrim-brand {
+    background-image: linear-gradient(
+      170deg,
+      rgb(var(--shadow-rgb) / 0.55) 0%,
+      rgb(var(--shadow-rgb) / 0.7) 40%,
+      rgb(var(--shadow-rgb) / 0.92) 100%
+    );
+  }
+  .lift {
+    transition:
+      transform 200ms ease,
+      box-shadow 200ms ease;
+  }
+  .lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+  .rtl-mirror:where([dir="rtl"] *, [dir="rtl"]) {
+    transform: scaleX(-1);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+html[data-motion="reduce"] {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Plus Jakarta Sans has a narrow word space (0.19em); open it slightly so English copy reads clearly. */
+html:not([lang="ar"]) body {
+  word-spacing: 0.08em;
+}

@@ -1,0 +1,125 @@
+{
+  "skip": "Skip to main content",
+  "demoLabel": "Demonstration platform: sample data",
+  "close": "Close",
+  "save": "Save",
+  "cancel": "Cancel",
+  "back": "Back",
+  "next": "Next",
+  "open": "Open",
+  "viewAll": "View all",
+  "search": "Search",
+  "clearFilters": "Clear filters",
+  "noResults": "No results match these filters.",
+  "minutes": "{{count}} min",
+  "language": "Language",
+  "switchToArabic": "العربية",
+  "switchToEnglish": "English",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "menu": "Menu",
+  "breadcrumb": "Breadcrumb",
+  "home": "Home",
+  "arabicPlaceholder": "Arabic content placeholder",
+  "byPotential": "by Potential.org",
+  "sponsored": "Sponsored",
+  "notFound": {
+    "title": "Page not found",
+    "body": "This page is not part of the demonstration.",
+    "home": "Go to the homepage"
+  },
+  "demo": {
+    "presenter": "Presenter",
+    "switchRole": "Switch role",
+    "reset": "Reset demo",
+    "resetTitle": "Reset the demonstration?",
+    "resetBody": "Every record returns to the seeded snapshot. Your language and role stay the same.",
+    "resetDone": "Demo reset to the seeded snapshot",
+    "motion": "Reduce motion",
+    "guide": "Golden path",
+    "guideSteps": "All demo steps",
+    "guideGo": "Go here",
+    "guideVisitor": "Visitor",
+    "startGolden": "Start golden path",
+    "showGuide": "Show demo guide"
+  },
+  "roles": {
+    "learner": "Learner",
+    "owner": "Programme owner",
+    "reviewer": "Qualified reviewer",
+    "leadership": "Leadership",
+    "sponsor": "Sample sponsor"
+  },
+  "nav": {
+    "learner": {
+      "home": "Home",
+      "tracks": "Tracks",
+      "journeys": "Decision journeys",
+      "calculator": "Calculator",
+      "checklists": "My checklists",
+      "shortlist": "My homes",
+      "reminders": "Reminders",
+      "events": "Events",
+      "offers": "Offers",
+      "assistant": "Ask Dalil",
+      "achievements": "Achievements",
+      "profile": "Profile and privacy"
+    },
+    "owner": {
+      "overview": "Overview",
+      "learners": "Learners",
+      "content": "Content",
+      "approvals": "Approvals",
+      "sponsors": "Sponsors and placements",
+      "communications": "Communications",
+      "reports": "Reports",
+      "settings": "Settings"
+    },
+    "reviewer": {
+      "queue": "Review queue",
+      "sources": "Sources"
+    },
+    "leadership": {
+      "impact": "Impact",
+      "funnel": "Funnel",
+      "reports": "Reports"
+    },
+    "sponsor": {
+      "placements": "My placements",
+      "performance": "Performance",
+      "guidelines": "Guidelines"
+    }
+  },
+  "signInPage": {
+    "title": "Sign in",
+    "subtitle": "Use your username or email, or open a demo profile below.",
+    "email": "Username or email",
+    "password": "Password",
+    "required": "Enter your username or email and your password.",
+    "unknown": "This demo only signs in the sample profiles. Check the username, or choose a profile card below.",
+    "demoTitle": "Demo profiles",
+    "demoBody": "One click opens each role with its own view and data. Password for every account: password.",
+    "panelEyebrow": "Home Ready · by Potential.org",
+    "panelTitle": "Your next home decision starts here.",
+    "point1": "Short videos and readings, Dubai rules first",
+    "point2": "Scored decision journeys and one calculator",
+    "point3": "Checklists, reminders and a certificate",
+    "badPassword": "Wrong password. Every demo account uses \"password\"."
+  },
+  "charts": {
+    "showChart": "Show chart",
+    "showTable": "Show table"
+  },
+  "table": {
+    "openRecord": "Open record",
+    "records": "{{n}} records",
+    "export": "Export CSV",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "{{current}} of {{total}}"
+  },
+  "placeholder": {
+    "title": "This screen is being built",
+    "body": "The foundation is in place. The full screen arrives in the next build step."
+  }
+}

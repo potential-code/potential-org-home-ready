@@ -1,0 +1,95 @@
+/*
+  Brand primitives: the ONLY file in src/ allowed to hold raw colour values (check:rules enforces it).
+
+  Home Ready by Potential.org (MKP-2026-002). Palette = potential.org live site (Aliya, Gate 2,
+  25 Nov 2026: "i want the potential.org branding colors"; site wins over brief C3 for colours and fonts).
+  Source: docs/sources/brand/site/main.css + home.html. Details and usage: docs/DESIGN.md.
+
+  Roles (contrast measured with WCAG 2.1 formula):
+    --brand-primary    emerald 700  #047857  5.48:1 white on it / on white (site #059669 is 3.77:1, fills only)
+    --brand-deep       ink          #10141A 18.47:1 white on it   header band, footer, sidebar, headings
+    --brand-accent     violet       #A78BFA  6.22:1 ink on it     decorative fills, ink text on top only
+    --brand-highlight  amber        #FBBF24 (site amber)  ink on it  primary CTAs (Join free, Start, Save)
+    --brand-pop        pink         #F472B6  illustration/decor only
+    --brand-warm       amber brown  #8A5A00  5.93:1 white on it
+    --brand-track-a    violet       #6D28D9  white on it; text on white uses -ink #5B21B6 (replaces C3 green,
+                                             which clashed with emerald; Iris's call at Gate 2)
+    --brand-track-b    blue         #2F6FDE  4.72:1 white on it; text on white uses -ink #2559B8 6.56:1
+    --brand-sponsor-*  label        #8A5A00 on #FFF4D6  5.41:1   "Sponsored" / "مُموَّل" label (C3)
+    Status fills (C3): success #2E9E6A, warning #E07B26, error #C0392B; status TEXT uses darker shades
+    (success #1F7A55, notice #9A4A0C).
+*/
+:root {
+  --brand-primary: #047857;
+  --brand-primary-50: #ecfdf5;
+  --brand-deep: #10141a;
+  --brand-deep-900: #080a0b;
+  --brand-accent: #a78bfa;
+  --brand-accent-600: #9a7af7;
+  --brand-highlight: #fbbf24;
+  --brand-highlight-300: #fcd34d;
+  --brand-warm: #8a5a00;
+  --brand-warm-800: #6e4800;
+  --brand-red: #c0392b;
+  --brand-tint-50: #f3fbf7;
+  --brand-tint-100: #e3f6ed;
+  --brand-tint-200: #c6ecd9;
+  --brand-ink: #1f1b24;
+  --brand-grey: #6b6475;
+  --brand-line: #e4e7ea;
+  --brand-white: #ffffff;
+  /* Start colour of the brand gradients (white text sits on it, so it must be dark enough). */
+  --brand-grad-start: #065f46;
+  /* Decorative "pop" colour for illustrations only (never text). */
+  --brand-pop: #f472b6;
+
+  /* Track colours (C3): fills and stripes; -ink variants for text on white. */
+  --brand-track-a: #6d28d9;
+  --brand-track-a-ink: #5b21b6;
+  --brand-track-a-soft: #f3eefe;
+  --brand-track-b: #2f6fde;
+  --brand-track-b-ink: #2559b8;
+  --brand-track-b-soft: #e9f0fc;
+  /* Sponsored label (C3). */
+  --brand-sponsor-soft: #fff4d6;
+  --brand-sponsor-ink: #8a5a00;
+
+  /* Flat illustration neutrals (hero art only; same in both palettes). */
+  --illus-sand: #f3e3c8;
+  --illus-sand-deep: #e2c9a0;
+  --illus-skin-1: #c98e62;
+  --illus-skin-2: #8a5638;
+  --illus-hair: #2a1e1b;
+
+  /* Surfaces and feedback. */
+  --tone-background: #faf8f5;
+  --tone-border: #e4e7ea;
+  --tone-input: #8a8296;
+  --tone-success: #1f7a55;
+  --tone-success-soft: #e6f4ec;
+  --tone-notice: #9a4a0c;
+  --tone-notice-soft: #fdefe2;
+  --tone-danger: #c0392b;
+  --tone-danger-soft: #fbeae8;
+  --status-success: #2e9e6a;
+  --status-warning: #e07b26;
+  --status-error: #c0392b;
+
+  /* Shadow tint: the deep brand colour as an rgb triplet (never pure black). */
+  --shadow-rgb: 16 20 26;
+
+  /* Fonts follow potential.org: Plus Jakarta Sans (the potential.org wordmark face, self-hosted) for body
+     and headings; the site's own body stack (system-ui) renders differently per OS, so the wordmark face
+     keeps the mockup consistent. Arabic: IBM Plex Sans Arabic (site has no Arabic face). */
+  --font-family:
+    "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "IBM Plex Sans Arabic", sans-serif;
+  --font-heading:
+    "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "IBM Plex Sans Arabic", sans-serif;
+}
+
+html[lang="ar"] {
+  --font-family: "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+}

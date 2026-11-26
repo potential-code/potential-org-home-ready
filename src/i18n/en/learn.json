@@ -1,0 +1,228 @@
+{
+  "dashboard": {
+    "title": "Welcome back, {{name}}",
+    "subtitle": "Here is what is next on your plan."
+  },
+  "stats": {
+    "completion": "Completion",
+    "completionHint": "Submitted or approved tasks out of all tasks",
+    "done": "Tasks done",
+    "doneHint": "Done out of assigned",
+    "minutes": "Minutes left",
+    "minutesHint": "Estimated time for open tasks"
+  },
+  "tasks": {
+    "title": "My tasks",
+    "due": "Due {{date}}",
+    "submit": "Submit",
+    "submitFor": "Submit {{title}}",
+    "submitted": "Task submitted for review",
+    "emptyTitle": "No tasks yet",
+    "emptyBody": "Your trainer will assign tasks here. Check back after your first session.",
+    "status": {
+      "todo": "To do",
+      "submitted": "Submitted",
+      "approved": "Approved",
+      "returned": "Returned"
+    }
+  },
+  "home": {
+    "greeting": "Good afternoon, {{name}}",
+    "next": {
+      "label": "Your next step",
+      "title": "Your tenancy in {{home}} renews in {{days}} days.",
+      "body": "Run your renewal checklist.",
+      "cta": "Open checklist",
+      "area": "Al Barsha"
+    },
+    "reminder": {
+      "title": "Reminder",
+      "body": "Renewal reminder set for 1 Feb 2027",
+      "meta": "Email and in-platform",
+      "channels": {
+        "email": "Email",
+        "in-platform": "In-platform",
+        "sms": "SMS"
+      },
+      "none": "No reminder set yet. Add one so you do not miss a date.",
+      "manage": "Manage reminders"
+    },
+    "stats": {
+      "title": "Your progress",
+      "renting": "Renting progress",
+      "rentingHint": "{{done}} of {{total}} units in Track A",
+      "checklists": "Checklists",
+      "calculator": "Calculator results",
+      "savedHint": "Saved to your account",
+      "points": "Points",
+      "pointsHint": "Earned from units, journeys and checklists",
+      "trackHint": "{{done}} of {{total}} units in Track {{track}}",
+      "buying": "Buying progress",
+      "journey": "Rent or buy score",
+      "journeyHint": "Out of 100, your last decision journey"
+    },
+    "badges": {
+      "title": "Badges",
+      "count": "{{earned}} of {{total}} earned",
+      "firstStep": "First Step",
+      "budgetBuilder": "Budget Builder",
+      "viewingPro": "Viewing Pro",
+      "none": "No badges yet. Finish a journey or save a checklist to earn your first.",
+      "all": "See all achievements"
+    },
+    "sponsor": {
+      "aria": "Sponsored offer",
+      "offer": "Moving day offer from SwiftMove (fictional sample): 10% off packing",
+      "notInterested": "Not interested",
+      "dismissed": "Offer hidden. We will not show it again."
+    },
+    "welcome": "Welcome, {{name}}",
+    "welcomeBody": "Your account is ready. Pick the decision in front of you and we will build your plan from there.",
+    "buyer": {
+      "nextFallback": "Verify the title deed before you pay",
+      "nextBody": "From your rent-or-buy journey. Tick it off in your due-diligence checklist."
+    },
+    "result": {
+      "title": "Your saved rent-vs-buy result",
+      "saved": "saved {{date}}",
+      "breakEven": "Buying costs less from year {{year}} at the defaults.",
+      "rentCheaper": "Renting stays cheaper at these numbers.",
+      "none": "No saved result yet. Compare renting and buying in the calculator.",
+      "open": "Open in calculator"
+    },
+    "empty": {
+      "eyebrow": "New here",
+      "title": "Start your first step",
+      "body": "Answer a few questions about your situation and get a clear next action, the costs to expect and a checklist to keep.",
+      "renew": "Renew or move?",
+      "buy": "Rent or buy?",
+      "exploreTitle": "Prefer to look around first?",
+      "exploreBody": "Browse the two learning tracks, try the calculator or ask Dalil a question. Nothing is saved until you choose to.",
+      "tracks": "Browse tracks",
+      "calculator": "Try the calculator",
+      "assistant": "Ask Dalil"
+    }
+  },
+  "pages": {
+    "achievements": "Achievements",
+    "profile": "Profile and privacy",
+    "checklists": "My checklists",
+    "checklist": "Checklist",
+    "shortlist": "My homes",
+    "reminders": "Reminders",
+    "events": "Events",
+    "offers": "Offers",
+    "home": "Home",
+    "tracks": "Tracks"
+  },
+  "ach": {
+    "subtitle": "Points, badges, milestones and certificates you have earned. Only you can see them.",
+    "stats": {
+      "points": "Points",
+      "pointsHint": "From units, journeys, checklists and tools",
+      "badges": "Badges",
+      "badgesHint": "Earned out of 8",
+      "milestones": "Milestones",
+      "milestonesHint": "20, 60 and 100% in each track",
+      "certs": "Certificates",
+      "certsHint": "One per track"
+    },
+    "badges": {
+      "title": "Badges",
+      "earnedOn": "Earned {{date}}",
+      "locked": "Not earned yet"
+    },
+    "milestones": {
+      "title": "Track milestones",
+      "open": "Open track",
+      "progress": "{{title}}: {{pct}}% complete",
+      "units": "{{done}} of {{total}} lessons done ({{pct}}%)",
+      "reached": "Reached",
+      "notYet": "Not yet"
+    },
+    "certs": {
+      "title": "Certificates",
+      "earned": "Earned",
+      "locked": "Not earned yet",
+      "issued": "Issued {{date}} · ID {{id}}",
+      "rule": "Complete all five lessons and score {{pass}}% or more in the final quiz.",
+      "view": "View certificate",
+      "continue": "Continue the track"
+    },
+    "points": {
+      "title": "Recent points",
+      "emptyTitle": "No points yet",
+      "emptyBody": "Finish a lesson, a journey or a checklist to earn your first points."
+    }
+  },
+  "profile": {
+    "subtitle": "Your details, language and what you have agreed to share. Change them at any time.",
+    "cancel": "Cancel",
+    "details": {
+      "title": "Your details",
+      "edit": "Edit",
+      "name": "Name",
+      "email": "Email",
+      "emirate": "Emirate",
+      "situation": "Situation",
+      "editTitle": "Edit your details",
+      "editBody": "We use these to show the rules for your emirate and the right next steps.",
+      "save": "Save changes",
+      "saved": "Details saved"
+    },
+    "emirates": {
+      "dubai": "Dubai",
+      "abu-dhabi": "Abu Dhabi",
+      "sharjah": "Sharjah",
+      "ajman": "Ajman",
+      "rak": "Ras Al Khaimah",
+      "fujairah": "Fujairah",
+      "uaq": "Umm Al Quwain",
+      "moving": "Moving to the UAE"
+    },
+    "situations": {
+      "moving": "Moving home",
+      "renewing": "Renewing my tenancy",
+      "thinking-buy": "Thinking about buying",
+      "buying": "Buying now"
+    },
+    "language": {
+      "title": "Language",
+      "body": "Choose the language for the whole platform.",
+      "saved": "Language changed"
+    },
+    "consents": {
+      "title": "Consents",
+      "terms": "Terms of use and privacy notice",
+      "termsOn": "Accepted on {{date}}",
+      "termsNone": "Not accepted yet",
+      "marketing": "Marketing emails",
+      "marketingOn": "On: we send tips and event news.",
+      "marketingOff": "Off: we only send reminders you set.",
+      "marketingSaved": "Marketing emails turned on",
+      "marketingStopped": "Marketing emails turned off",
+      "partners": "Partner requests",
+      "partnersBody": "Partners see your details only for requests you send, and only until you withdraw.",
+      "givenOn": "Shared on {{date}}",
+      "withdrawnOn": "Withdrawn on {{date}}",
+      "withdraw": "Withdraw",
+      "withdrawn": "Consent for {{name}} withdrawn",
+      "partnersNone": "You have not shared your details with any partner."
+    },
+    "data": {
+      "title": "Your data",
+      "downloadBody": "Download everything we hold about you as a JSON file.",
+      "download": "Download my data",
+      "downloaded": "Your data file is downloading",
+      "deleteBody": "Deleting your account removes your progress, saved results, checklists and reminders.",
+      "delete": "Delete account",
+      "confirmTitle": "Delete your account?",
+      "confirmBody": "We will delete your account and all your data within 30 days. You can cancel the request until then.",
+      "confirm": "Delete account",
+      "deleteToast": "Deletion requested. We will email you to confirm.",
+      "deleteRequested": "Deletion requested on {{date}}",
+      "deleteCancel": "Cancel request",
+      "deleteCancelled": "Deletion request cancelled"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "pages": {
+    "placements": "My placements",
+    "performance": "Performance",
+    "guidelines": "Guidelines"
+  },
+  "banner": {
+    "eyebrow": "Sample sponsor · {{status}}",
+    "placementsBody": "Where Oasis Home Finance appears in Home Ready, with the exact label learners see and whether each placement is live.",
+    "performanceBody": "Aggregate results for your placements. Counts only.",
+    "guidelinesBody": "How sponsorship works on Home Ready. These rules apply to every partner."
+  },
+  "privacy": "Personal data is never shared without the user's separate opt-in. Requests are passed by Potential.org.",
+  "slots": {
+    "track": {
+      "title": "Track A partner badge",
+      "where": "Track A Renting in the UAE: course page and lesson header"
+    },
+    "calculator": {
+      "title": "Calculator \"powered by\" slot",
+      "where": "Home Ready calculator: below the results on every tab"
+    },
+    "offers": {
+      "title": "Offer: Free mortgage pre-approval check",
+      "where": "Offers area, with \"Request a call from this partner\" behind a separate consent dialog"
+    },
+    "event": {
+      "title": "Event partner",
+      "where": "Events: partner line on the sponsored session"
+    },
+    "video": {
+      "title": "Video partner",
+      "where": "Lesson video"
+    },
+    "home-card": {
+      "title": "Home card",
+      "where": "Learner home"
+    },
+    "partner-requests": {
+      "title": "Partner requests",
+      "where": "Partner requests"
+    }
+  },
+  "placement": {
+    "labelPreview": "Label preview",
+    "where": "Where it shows",
+    "live": "Live",
+    "since": "Live since {{date}}",
+    "preview": "Preview",
+    "previewTitle": "Learner view: {{slot}}",
+    "previewBody": "This is how the placement appears to a signed-in learner. The label is always visible and cannot be hidden.",
+    "rule": "No personal data, label always visible.",
+    "emptyTitle": "No live placements right now",
+    "emptyBody": "Potential.org has paused your placements. They return here as soon as they are live again; ask your Potential.org contact for the reason."
+  },
+  "mock": {
+    "trackTitle": "Renting in the UAE",
+    "trackMeta": "Track A · 5 lessons · certificate",
+    "partnerLine": "Track partner: Oasis Home Finance (fictional sample)",
+    "calcTitle": "Rent vs buy",
+    "calcResult": "Buying costs less from year 3 at the defaults",
+    "poweredBy": "Powered by Oasis Home Finance (fictional sample)",
+    "offerTitle": "Free mortgage pre-approval check",
+    "offerBody": "A free, no-obligation check of what a lender may pre-approve, before you start viewing homes to buy.",
+    "offerCta": "Request a call from this partner",
+    "eventLine": "Event partner: Oasis Home Finance (fictional sample)"
+  },
+  "perf": {
+    "impressions": "Impressions",
+    "impressionsHint": "Times a learner saw any of your labelled placements",
+    "calculatorRuns": "Calculator runs",
+    "calculatorRunsHint": "Calculator runs with your \"powered by\" slot visible",
+    "offerViews": "Offer views",
+    "offerViewsHint": "Opens of the free mortgage pre-approval check offer",
+    "requests": "Consented partner requests",
+    "requestsHint": "Count only. Each learner ticked a separate consent box.",
+    "chartTitle": "From seeing to asking",
+    "chartSub": "Aggregate counts for all Oasis Home Finance placements in the pilot",
+    "series": "Count",
+    "measure": "Measure",
+    "value": "Value",
+    "download": "Download report (PDF)",
+    "noPersonal": "What you will never see here",
+    "noPersonalBody": "Names, email addresses, phone numbers or any detail that identifies a learner. If a learner asks for a call, Potential.org passes the request on with their consent.",
+    "requestRate": "{{pct}}% of offer views led to a consented request"
+  },
+  "guidelines": {
+    "editorial": {
+      "title": "Editorial independence",
+      "points": [
+        "Potential.org and its qualified reviewer write and check every lesson, journey and calculator default.",
+        "Sponsors do not see, edit or approve content before it is published.",
+        "Fees and rules are sourced and dated from public sources, never from a sponsor."
+      ]
+    },
+    "labelling": {
+      "title": "Labelling",
+      "points": [
+        "Every sponsored slot carries the \"Sponsored\" label at its top corner, in English and Arabic.",
+        "The label names the partner and cannot be hidden, shortened or restyled.",
+        "Sponsored offers sit only in the labelled Offers area, calculator slot, track badge and events."
+      ]
+    },
+    "influence": {
+      "title": "No influence on content or rankings",
+      "points": [
+        "Sponsors cannot change calculator results, journey scores, Dalil's answers or the order of anything shown.",
+        "Dalil, the AI guide, never recommends a sponsor's product or a specific property.",
+        "Potential.org can pause any placement at any time; paused placements disappear from every screen."
+      ]
+    },
+    "data": {
+      "title": "Personal data",
+      "points": [
+        "Sponsors receive aggregate counts only.",
+        "A learner's name, email and phone go to a partner only after a separate, unticked-by-default consent for that single request.",
+        "Learners can withdraw consent in their profile at any time."
+      ]
+    }
+  }
+}
